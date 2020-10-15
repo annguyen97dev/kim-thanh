@@ -1,0 +1,130 @@
+
+@@include('./modules/head.html')
+@@include('./modules/header.html')
+
+
+<main class="wrapper">
+    <div class="container-fluid wrap-baocao">
+        <div class="bg-white p-3">
+            <div class="row mt-3" id="myTab" role="tablist">
+                <div class="col-md-4">
+                    <div class="box-border tabs h-100">
+                        <p class="box-border__title">Tổng hợp kho</p>
+                        <button class="btn btn-default active" data-bc="sokho">Sổ
+                            kho</button>
+                        <button class="btn btn-default" data-bc="tonkho">Tồn kho</button>
+                        <button class="btn btn-default" data-bc="hethang">Hết
+                            hàng</button>
+                        <button class="btn btn-default"
+                            data-bc="the-kho-chi-tiet">Thẻ kho chi tiết</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box-border tabs h-100">
+                        <p class="box-border__title">Tổng hợp bán hàng</p>
+                        <button class="btn btn-default w-100"
+                            data-bc="cong-no-phai-thu-tra">Công nợ phải thu
+                            phải
+                            trả</button>
+                        <button class="btn btn-default w-100"
+                            data-bc="bao-cao-ban-hang">Báo cáo bán hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-border tabs h-100">
+                        <p class="box-border__title">Tổng hợp khác</p>
+                        <button class="btn btn-default" data-bc="so-cskh">Sổ
+                            CSKH</button>
+                        <!-- <button class="btn btn-default"
+                            data-bc="quan-li-han-the">Quản lí hạn thẻ</button> -->
+                        <button class="btn btn-default"
+                            data-bc="thu-chi-chot-ca">Thu-Chi/ Chốt ca</button>
+                        <!-- <button class="btn btn-default"
+                            data-bc="quan-li-serial">Quản lí Serial/IMEI</button> -->
+                        <!-- <button class="btn btn-default"
+                            data-bc="tang-truong-doanh-so">Tăng trường D.số</button> -->
+                        <button class="btn btn-default"
+                            data-bc="theo-doi-hang-ton">Theo dõi hàng tồn</button>
+                        <button class="btn btn-default" data-bc="loi-nhuan">Lợi
+                            nhuận</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-3 mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Sổ kho -->
+                    <div class="content-bc" id="sokho" style="display: block;">
+                        @@include("so-kho/so-kho-home.html")
+                    </div>
+
+                    <!-- Tồn kho -->
+                    <div class="content-bc" id="tonkho">
+                        @@include("ton-kho/ton-kho-home.html")
+                    </div>
+
+                    <!-- Hết hàng -->
+                    <div class="content-bc" id="hethang">
+                        @@include("het-hang/het-hang-home.html")
+                    </div>
+
+                    <!-- Thẻ kho chi tiết -->
+                    <div class="content-bc" id="the-kho-chi-tiet">
+                        @@include('the-kho-chi-tiet/the-kho-chi-tiet-home.html')
+                    </div>
+
+                    <!-- Công nợ phả thu trả -->
+                    <div class="content-bc" id="cong-no-phai-thu-tra">
+                        @@include('cong-no-phai-thu-tra/cong-no-phai-thu-tra-home.html')
+                    </div>
+
+                    <!-- Báo cáo bán hàng -->
+                    <div class="content-bc" id="bao-cao-ban-hang">
+                        @@include("bao-cao-ban-hang/bao-cao-ban-hang-home.html")
+                    </div>
+
+                    <!-- Sổ CSKH -->
+                    <div class="content-bc" id="so-cskh">
+                        @@include("so-cskh/so-cskh-home.html")
+                    </div>
+
+                    <!-- Quản lí hạn thẻ -->
+                    <div class="content-bc" id="quan-li-han-the">
+                        @@include("quan-li-han-the/quan-li-han-the-home.html")
+                    </div>
+
+                    <!-- Thu chi chốt ca -->
+                    <div class="content-bc" id="thu-chi-chot-ca">
+                        @@include("thu-chi-chot-ca/thu-chi-chot-ca-home.html")
+                    </div>
+
+                    <!-- Quản lí Serial -->
+                    <div class="content-bc" id="quan-li-serial">
+                        @@include('quan-li-serial/quan-li-serial-home.html')
+                    </div>
+
+                    <!-- Tăng trưởng doanh số -->
+                    <div class="content-bc" id="tang-truong-doanh-so">
+                        @@include('tang-truong-doanh-so/tang-truong-doanh-so-home.html')
+                    </div>
+
+                    <!-- Theo dõi hàng tôn -->
+                    <div class="content-bc" id="theo-doi-hang-ton">
+                        @@include('theo-doi-hang-ton/theo-doi-hang-ton-home.html')
+                    </div>
+
+                    <!-- Lợi nhuận -->
+                    <div class="content-bc" id="loi-nhuan">
+                        @@include('loi-nhuan/loi-nhuan-home.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+@@include('./modules/footer-script.html')
+@@include('./modules/footer.html')

@@ -1,0 +1,343 @@
+<div class="container-fluid">
+    <div class="bg-white mt-2 p-2">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab" href="#ds-1" role="tab"
+                            aria-controls="home" aria-selected="true">Doanh số
+                            khách hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                            href="#ds-2" role="tab" aria-controls="profile"
+                            aria-selected="false">Doanh số nhân viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab"
+                            href="#ds-3" role="tab" aria-controls="contact"
+                            aria-selected="false">Doanh số nhà cung cấp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="ds-1"
+                        role="tabpanel" aria-labelledby="home-tab">
+                        <!--list button-->
+                        <div class="ds-list-button w-100 p-2">
+                            <button class="btn btn-success" data-toggle="modal"
+                                data-target="#doanh-so-khach-hang">Đăng
+                                kí doanh số
+                                khách hàng</button>
+                            <div class="chi-nhanh ml-3">
+                                <p class="inline">Chi nhánh</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </div>
+                            <div class="nam ml-3">
+                                <p class="inline">Năm</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">2020</option>
+                                </select>
+                            </div>
+                            <div class="xem ml-3">
+                                <p class="inline">Xem</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">DS - KH</option>
+                                </select>
+                            </div>
+                            <div class="list-btn ml-3">
+                                <button class="btn line-height-0" title="Nạp lại
+                                    dữ liệu
+                                    mới">
+                                    <img src="../assets/images/loading.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                                <button class="btn line-height-0" title="Xuất ra
+                                    file
+                                    excel">
+                                    <img src="../assets/images/btn-export.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                            </div>
+                            <div class="form-check ml-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Chạy khi
+                                        khởi động</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--table-->
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                style="width:
+                                100%;" id="table-ds-1">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Khách hàng</th>
+                                        <th>%T1</th>
+                                        <th>KHT1</th>
+                                        <th>%T1</th>
+                                        <th>%T2</th>
+                                        <th>KHT2</th>
+                                        <th>%T2</th>
+                                        <th>%T3</th>
+                                        <th>KHT3</th>
+                                        <th>%T3</th>
+                                        <th>T</th>
+                                        <th>KHT</th>
+                                        <th>%T</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ds-2" role="tabpanel"
+                        aria-labelledby="profile-tab">
+
+                        <!--list button-->
+                        <div class="ds-list-button w-100 p-2">
+                            <button class="btn btn-success" data-toggle="modal"
+                                data-target="#doanh-so-nhan-vien">Đăng kí doanh
+                                số
+                                nhân viên</button>
+                            <div class="chi-nhanh ml-3">
+                                <p class="inline">Chi nhánh</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </div>
+                            <div class="nam ml-3">
+                                <p class="inline">Năm</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">2020</option>
+                                </select>
+                            </div>
+                            <div class="xem ml-3">
+                                <p class="inline">Xem</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">DS - KH</option>
+                                </select>
+                            </div>
+                            <div class="list-btn ml-3">
+                                <button class="btn line-height-0" title="Nạp lại
+                                    dữ liệu
+                                    mới">
+                                    <img src="../assets/images/loading.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                                <button class="btn line-height-0" title="Xuất ra
+                                    file
+                                    excel">
+                                    <img src="../assets/images/btn-export.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                            </div>
+                            <div class="form-check ml-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Chạy khi
+                                        khởi động</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--table-->
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                style="width:
+                                100%;" id="table-ds-2">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nhân viên</th>
+                                        <th>%T1</th>
+                                        <th>KHT1</th>
+                                        <th>%T1</th>
+                                        <th>%T2</th>
+                                        <th>KHT2</th>
+                                        <th>%T2</th>
+                                        <th>%T3</th>
+                                        <th>KHT3</th>
+                                        <th>%T3</th>
+                                        <th>T</th>
+                                        <th>KHT</th>
+                                        <th>%T</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ds-3" role="tabpanel"
+                        aria-labelledby="contact-tab">
+                        <!--list button-->
+                        <div class="ds-list-button w-100 p-2">
+                            <button class="btn btn-success" data-toggle="modal"
+                                data-target="#doanh-so-ncc">Đăng kí doanh số
+                                nhà cung cấp</button>
+                            <div class="chi-nhanh ml-3">
+                                <p class="inline">Chi nhánh</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </div>
+                            <div class="nam ml-3">
+                                <p class="inline">Năm</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">2020</option>
+                                </select>
+                            </div>
+                            <div class="xem ml-3">
+                                <p class="inline">Xem</p>
+                                <select name="" id="" class="inline">
+                                    <option value="">DS - KH</option>
+                                </select>
+                            </div>
+                            <div class="list-btn ml-3">
+                                <button class="btn line-height-0" title="Nạp lại
+                                    dữ liệu
+                                    mới">
+                                    <img src="../assets/images/loading.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                                <button class="btn line-height-0" title="Xuất ra
+                                    file
+                                    excel">
+                                    <img src="../assets/images/btn-export.png"
+                                        alt=""
+                                        class="inline">
+                                </button>
+                            </div>
+                            <div class="form-check ml-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Chạy khi
+                                        khởi động</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--table-->
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                style="width:
+                                100%;" id="table-ds-3">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nhà cung cấp</th>
+                                        <th>%T1</th>
+                                        <th>KHT1</th>
+                                        <th>%T1</th>
+                                        <th>%T2</th>
+                                        <th>KHT2</th>
+                                        <th>%T2</th>
+                                        <th>%T3</th>
+                                        <th>KHT3</th>
+                                        <th>%T3</th>
+                                        <th>T</th>
+                                        <th>KHT</th>
+                                        <th>%T</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include("popup/doanh-so-khach-hang.html")
+@@include("popup/doanh-so-nhan-vien.html")
+@@include("popup/doanh-so-ncc.html")

@@ -1,0 +1,1036 @@
+<div class="container-fluid">
+    <div class="bg-white p-3">
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="box-border sidebar-search">
+                    <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                    <div class="box-border mt-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 pl-0 pr-1">
+                                    <p>Từ ngày</p>
+                                    <input type="text"
+                                        class="choose-date
+                                        w-100">
+                                </div>
+                                <div class="col-md-6 pr-0 pl-1">
+                                    <p>Đến ngày</p>
+                                    <input type="text"
+                                        class="choose-date
+                                        w-100">
+                                </div>
+                                <div class="col-md-12 p-0 list-button">
+                                    <div class="box-select mt-2">
+                                        <select name="" id="" class="w-100
+                                            select-gray">
+                                            <option value="">Tìm KHtheo tháng
+                                                sinh</option>
+                                            <option value="">Tìm KH hết hạn thẻ</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="btn btn-search d-block
+                                        mt-2"><img
+                                            src="../assets/images/btn-search.png"
+                                            alt="" class="inline"><span
+                                            class="inline">Tìm
+                                            kiếm</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-button mt-3">
+                        <a href="#" class="btn btn-export mt-1
+                            d-block"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất ra Excel</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block"><img
+                                src="../assets/images/loading.png"
+                                alt="" class="inline"><span
+                                class="inline">Nạp lại dữ liệu</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block"><img
+                                src="../assets/images/cuon-so.png"
+                                alt="" class="inline"><span
+                                class="inline">Sổ SCKH</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block"><img
+                                src="../assets/images/tao-email.png"
+                                alt="" class="inline"><span
+                                class="inline">Gửi mail</span></a>
+                        <a href="#" class="btn btn-close
+                            inline mt-1"><img
+                                src="../assets/images/btn-close.png"
+                                alt="" class="inline"><span
+                                class="inline">Đóng</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="wrap-height-table">
+                    <table class="table display nowrap table-striped row-border
+                        order-column table-khachhang fixed-2-column"
+                        id="table-khachhang" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+
+                                <th>Mã KH</th>
+                                <th>Tên KH</th>
+                                <th>Địa chỉ NR</th>
+                                <th>Điện thoại</th>
+                                <th>Di động</th>
+                                <th>Ngày sinh</th>
+                                <th>Giới tính</th>
+                                <th>Thẻ KH</th>
+                                <th>Nhóm KH</th>
+
+                                <th>Người đại diện</th>
+                                <th>Địa chỉ cty</th>
+                                <th>MST</th>
+                                <th>Fax</th>
+                                <th>Email</th>
+                                <th>Website</th>
+                                <th>Chức vụ</th>
+                                <th>Ngày tạo KH</th>
+                                <th>Nhận tin</th>
+                                <th>Theo dõi</th>
+
+                                <th>Người QL</th>
+                                <th>Chi nhánh QL</th>
+                                <th>Khu vực địa chỉ</th>
+                                <th>Ghi chú</th>
+                                <th>Tên viết tắt</th>
+                                <th>Alias</th>
+                                <th>Tên công ty</th>
+                                <th>ĐC giao hóa đơn</th>
+                                <th>ĐC giao hàng</th>
+                                <th>ĐC giao hàng 2</th>
+
+                                <th>PT vận chuyển</th>
+                                <th>Điều khoản</th>
+                                <th>Kênh KH</th>
+                                <th>Tài khoản NH</th>
+                                <th>Chủ TK</th>
+                                <th>Mở tại</th>
+                                <th>Giới hạn nợ</th>
+                                <th>Giới hạn ngày nợ</th>
+                                <th>Giới hạn số phiến nợ</th>
+                                <th>Tính lãi gần nhất</th>
+
+                                <th>Mức chiết khấu</th>
+                                <th>Ngày được tạo</th>
+                                <th>Người tạo</th>
+                                <th>Ngày được sửa</th>
+                                <th>Người được sửa</th>
+                                <th>Người sửa</th>
+                                <th>Khách hàng tiềm năng</th>
+                                <th>Thuộc kiểu</th>
+                                <th>KHTT card</th>
+                                <th>Ngày mua cuối cùng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>Nguyễn An</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0978975731</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+
+                                <td>HIHAHIA</td>
+                                <td>test</td>
+                                <td>Any where</td>
+                                <td>0123456789</td>
+                                <td>0123456789</td>
+                                <td>14/11/1997</td>
+                                <td>test</td>
+                                <td>K biết</td>
+                                <td>k biết</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-3 mt-4">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box-border fix-list-tab h-100">
+                    <p class="title-nau mb-3">Thông tin</p>
+                    <ul class="nav flex-column nav-pills nav-tabs" id="myTab"
+                        role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="profile-tab"
+                                data-toggle="tab" href="#t-2"
+                                role="tab" aria-controls="profile"
+                                aria-selected="false">Lịch sử mua
+                                hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab"
+                                data-toggle="tab" href="#t-3"
+                                role="tab" aria-controls="contact"
+                                aria-selected="false">Lịch sử trả
+                                lại
+                                hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab"
+                                data-toggle="tab" href="#t-4"
+                                role="tab" aria-controls="contact"
+                                aria-selected="false">Công nợ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab"
+                                data-toggle="tab" href="#t-5"
+                                role="tab" aria-controls="contact"
+                                aria-selected="false">Lịch sử
+                                thanh
+                                toán</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab"
+                                data-toggle="tab" href="#t-6"
+                                role="tab" aria-controls="contact"
+                                aria-selected="false">Thẻ giảm giá</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content mt-3" id="myTabContent">
+                    <!-- Tab lịch sử mua hàng -->
+                    <div class="tab-pane fade show active" id="t-2"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <!--Table số lần mua hàng-->
+                        <div class="box-table">
+                            <p class="title-tab title-nau text-center">Danh sách
+                                phiếu bán hàng</p>
+                            <div
+                                class="wrap-height-table-double">
+                                <table class="table display
+                                    table-striped"
+                                    id="table-ds-phieubanhang"
+                                    style="width:
+                                    100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Số phiếu</th>
+                                            <th>Ngày hóa đơn</th>
+                                            <th>Mã khách hàng</th>
+                                            <th>Khách hàng</th>
+                                            <th>Nhân viên</th>
+                                            <th>Tổng tiền </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--Table chi tiết hóa đơn bán lẻ-->
+                        <div class="box-table second">
+                            <p class="title-tab title-nau text-center">Chi
+                                tiết
+                                hóa đơn bán lẻ</p>
+                            <div
+                                class="wrap-height-table-double">
+                                <table class="table display
+                                    table-striped"
+                                    id="table-chitietmuahang"
+                                    style="width:
+                                    100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Mã hàng</th>
+                                            <th>Tên hàng</th>
+                                            <th>Số lượng</th>
+                                            <th>Đơn giá VND</th>
+                                            <th>Thuế VND</th>
+                                            <th>Chiết khấu VND</th>
+                                            <th>Thành tiền VND</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>5000</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab lịch sử trả lại hàng -->
+                    <div class="tab-pane fade" id="t-3"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="display table
+                                table-striped" style="width:
+                                100%;" id="table-ls-tralaihang">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Ngày mua</th>
+                                        <th>Ngày trả</th>
+                                        <th>Tên nhân viên</th>
+                                        <th>Số phiếu</th>
+                                        <th>Tổng tiền (VNĐ)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--Tab công nợ -->
+                    <div class="tab-pane fade" id="t-4"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="display table
+                                table-striped" style="width:
+                                100%;" id="table-congno">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Ngày HĐ</th>
+                                        <th>Số HĐ</th>
+                                        <th>Tổng nợ(VNĐ)</th>
+                                        <th>Số còn nợ (VNĐ)</th>
+                                        <th>Số trả (VNĐ)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Tab Quá trình thanh toán -->
+                    <div class="tab-pane fade" id="t-5"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="display table
+                                table-striped" style="width:
+                                100%;" id="table-thanhtoan">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Số phiếu thu</th>
+                                        <th>Ngày TT</th>
+                                        <th>Tên NV thu ngân</th>
+                                        <th>Số tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Tab thẻ giảm giá -->
+                    <div class="tab-pane fade" id="t-6"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="display table
+                                table-striped" style="width:
+                                100%;" id="table-thegiamgia">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Hạng thẻ</th>
+                                        <th>Ngày cấp</th>
+                                        <th>Ngày hết hạn</th>
+                                        <th>Tổng tích lũy</th>
+                                        <th>Hiện trạng thẻ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

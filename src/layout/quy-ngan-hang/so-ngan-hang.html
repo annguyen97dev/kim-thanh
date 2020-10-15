@@ -1,0 +1,184 @@
+<div class="modal fade default-popup popup-so-ngan-hang" id="so-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Quỹ
+                    và ngân hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab" href="#xem-1" role="tab"
+                            aria-controls="home" aria-selected="true">Xem theo
+                            chi nhánh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                            href="#xem-2" role="tab" aria-controls="profile"
+                            aria-selected="false">Xem theo từng tài khoản</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="xem-1"
+                        role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-border mt-3">
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input"
+                                                    value=""><span
+                                                    class="ml-2">Tháng
+                                                    hiện hành</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input"
+                                                    value=""
+                                                    class="ml-2"><span>Khoảng
+                                                    thời gian</span>
+                                            </label>
+                                        </div>
+                                        <div class="box-choose-time col-6 p-0
+                                            mt-3
+                                            ml-0">
+                                            <p class="mr-2">Từ</p>
+                                            <input class="datepicker mr-2 col-4
+                                                p-0"
+                                                id="chooseDate_To"
+                                                data-date-format="mm/dd/yyyy">
+                                            <p class="mr-2">Đến</p>
+                                            <input class="datepicker mr-2 col-4
+                                                p-0"
+                                                id="chooseDate_Form"
+                                                data-date-format="mm/dd/yyyy">
+                                            <select name="" id="" class="mr-2">
+                                                <option value="">Hôm nay</option>
+                                                <option value="">Hôm sau</option>
+                                                <option value="">Hôm bữa</option>
+                                            </select>
+                                        </div>
+                                        <div class="wrap-height-table-quy mt-3">
+                                            <table class="table display"
+                                                id="table-snh" style="width:
+                                                100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên chi nhánh</th>
+                                                        <th><span>Chọn </span><input
+                                                                type="checkbox"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <label
+                                                        class="form-check-label">
+                                                        <input type="checkbox"
+                                                            class="form-check-input"
+                                                            value=""
+                                                            class="ml-2"><span>Chọn
+                                                            tất
+                                                            cả các chi nhánh</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <button class="btn btn-success"
+                                                    data-toggle="modal"
+                                                    data-target="#so-du-ngan-hang">Khai
+                                                    báo
+                                                    số dư quỹ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="xem-2" role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="table display" style="width: 100%;"
+                                id="table-taikhoan">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mã ngân hàng</th>
+                                        <th>Tên ngân hàng</th>
+                                        <th>Chủ TK</th>
+                                        <th>Số TK</th>
+                                        <th>Ghi chú</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Đồng ý</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('popup/so-du-ngan-hang.html')

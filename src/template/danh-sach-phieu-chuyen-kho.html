@@ -1,0 +1,1993 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+      href="../css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts/Averta/font.css">
+    <link rel="stylesheet" type="text/css"
+      href="../css/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/moment.js"></script>
+
+
+
+    <title>Kim Thành</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg fix-navbar">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link dropdown" href="#" data-sub="sub-1">Hệ
+          thống <span class="sr-only">(current)</span></a>
+        <!-- Sub menu 1 -->
+        <div class="dropdown-menu" id="sub-1" style="display: block;">
+          <div class="submenu-group right">
+            <a class="dropdown-item" href="user.html">
+              <img src="../assets/images/user.png" class="submenu-icon" alt="">
+              Quản lí <br> user
+            </a>
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#form-doi-mat-khau"><img
+                src="../assets/images/change-pass.png" class="submenu-icon"
+                alt="">đổi <br>
+              mật khẩu</a>
+            <a class="dropdown-item" href="nhat-ky-nguoi-dung.html"><img
+                src="../assets/images/nhat-ky-nguoi-dung.png"
+                class="submenu-icon"
+                alt="">nhật
+              ký <br> người dùng</a>
+          </div>
+          <a class="dropdown-item" href="#" data-toggle="modal"
+            data-target="#thoat-chuong-trinh"><img
+              src="../assets/images/phuc-hoi-du-lieu.png" class="submenu-icon"
+              alt="">sao
+            lưu <br> phục hồi dữ liệu</a>
+          <div class="submenu-group left">
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#thoat-chuong-trinh"><img
+                src="../assets/images/chuyen-chi-nhanh.png" class="submenu-icon"
+                alt="">chuyển <br> chi nhánh</a>
+            <a class="dropdown-item pt-13" href="#" data-toggle="modal"
+              data-target="#thoat-chuong-trinh"><img
+                src="../assets/images/logout.png" class="submenu-icon"
+                alt="">log
+              off htsoft</a>
+            <a class="dropdown-item pt-13" href="#" data-toggle="modal"
+              data-target="#thoat-chuong-trinh"><img
+                src="../assets/images/close-menu.png" class="submenu-icon"
+                alt="">Đóng</a>
+          </div>
+          <div class="submenu-des">Hệ thống</div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown" href="#" data-sub="sub-2">Cấu hình</a>
+        <!-- Sub menu 2 -->
+        <div class="dropdown-menu" id="sub-2">
+          <a class="dropdown-item" href="nhan-vien.html">
+            <img src="../assets/images/nhan-vien.png" class="submenu-icon"
+              alt="">
+            nhân <br> viên
+          </a>
+          <a class="dropdown-item" href="khach-hang.html"><img
+              src="../assets/images/khach-hang-va-ncc.png" class="submenu-icon"
+              alt="">khách hàng <br> và nhà cung cấp</a>
+          <div class="submenu-group center">
+            <a class="dropdown-item" href="chi-nhanh.html"><img
+                src="../assets/images/chi-nhanh.png" class="submenu-icon"
+                alt="">chi <br>
+              nhánh</a>
+            <a class="dropdown-item" href="kho-hang.html"><img
+                src="../assets/images/kho-hang.png" class="submenu-icon"
+                alt="">kho <br>
+              hàng</a>
+            <a class="dropdown-item" href="nhom-hang.html"><img
+                src="../assets/images/nhom-hang.png" class="submenu-icon"
+                alt="">nhóm <br>
+              hàng</a>
+            <a class="dropdown-item" href="mat-hang.html"><img
+                src="../assets/images/mat-hang.png" class="submenu-icon"
+                alt="">mặt <br>
+              hàng</a>
+            <a class="dropdown-item" href="vi-tri-mat-hang.html"><img
+                src="../assets/images/vitri-mathang.png" class="submenu-icon"
+                alt="">Vị trí <br> mặt hàng<br>
+            </a>
+            <a class="dropdown-item" href="phieu-ghi-chu.html"><img
+                src="../assets/images/phieu-ghi-chu.png" class="submenu-icon"
+                alt="">Phiếu <br> ghi chú<br>
+            </a>
+          </div>
+          <div class="submenu-group right">
+            <a class="dropdown-item" href="mat-hang-excel.html">
+              <img src="../assets/images/mat-hang-excel.png"
+                class="submenu-icon"
+                alt="">
+              nhập mặt hàng <br> từ excel
+            </a>
+            <a class="dropdown-item" href="in-ma-vach.html">
+              <img src="../assets/images/in-ma-vach.png" class="submenu-icon"
+                alt="">
+              in <br> mã vạch
+            </a>
+          </div>
+          <div class="submenu-group right">
+            <a class="dropdown-item" href="ngan-hang.html">
+              <img src="../assets/images/ngan-hang.png" class="submenu-icon"
+                alt="">
+              ngân <br> hàng
+            </a>
+            <!-- <a class="dropdown-item" href="tien-te.html">
+              <img src="../assets/images/tien-te.png" class="submenu-icon"
+                alt="">
+              tiền <br> tệ
+            </a> -->
+          </div>
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="ly-do.html">
+              <img src="../assets/images/ly-do.png" class="submenu-icon"
+                alt="">
+              lý <br> do
+            </a>
+            <!-- <a class="dropdown-item" href="ca-lam-viec.html">
+              <img src="../assets/images/ca-lam-viec.png" class="submenu-icon"
+                alt="">
+              ca <br> làm việc
+            </a> -->
+            <a class="dropdown-item" href="dia-chi.html">
+              <img src="../assets/images/dia-chi.png" class="submenu-icon"
+                alt="">
+              địa <br> chỉ
+            </a>
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#tuy-chon">
+              <img src="../assets/images/tuy-chon.png" class="submenu-icon"
+                alt="">
+              tùy <br> chọn
+            </a>
+          </div>
+
+          <div class="submenu-des">Lập cấu hình danh mục chuẩn</div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-3" href="#">Mua hàng</a>
+        <!-- Sub menu 3 -->
+        <div class="dropdown-menu" id="sub-3">
+          <a class="dropdown-item" href="don-mua-hang.html">
+            <img src="../assets/images/don-mua-hang.png" class="submenu-icon"
+              alt="">
+            Đơn <br> mua hàng
+          </a>
+          <div class="submenu-group center">
+            <a class="dropdown-item" href="phieu-nhap-kho.html"><img
+                src="../assets/images/phieu-nhap-kho.png" class="submenu-icon"
+                alt="">Phiếu <br> nhập kho</a>
+            <a class="dropdown-item" href="hang-mua-tra-lai.html"><img
+                src="../assets/images/hang-mua-tra-lai.png" class="submenu-icon"
+                alt="">Hàng mua <br> trả lại</a>
+          </div>
+          <div class="submenu-group-all">
+            <!-- <a class="dropdown-item" href="tra-tien-ncc.html"><img
+                src="../assets/images/tra-tien-ncc.png" class="submenu-icon"
+                alt="">Trả tiền <br> nhà cung cấp</a> -->
+            <!-- <a class="dropdown-item" href="ql-gia-von.html"><img
+                src="../assets/images/quan-li-gia-von.png" class="submenu-icon"
+                alt="">Quản lí <br> giá vốn</a> -->
+            <div class="submenu-bctk d-inline position-relative">
+              <a class="dropdown-item have-menu-child pt-13" href="#"
+                data-menu="bctk1"><img
+                  src="../assets/images/bctk.png" class="submenu-icon"
+                  alt=""><span>BC_TK</span></a>
+              <ul class="menu-child" id="bctk1">
+                <li>
+                  <a href="so-kho.html">
+                    <span class="title">Sổ kho</span>
+                    <span class="des">Xem/in xuất, Nhập, Điều chuyển, Tồn hàng
+                      hóa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="ton-kho.html">
+                    <span class="title">Tồn kho</span>
+                    <span class="des">Xem/in hàng hóa tồn kho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="het-hang.html" class="border-bt">
+                    <span class="title">Hết hàng</span>
+                    <span class="des">Xem/in đã bán hết, ngày bán hết</span>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="chi-tiet-serial.html">
+                    <span class="title">Quản lí Seria,Imei</span>
+                    <span class="des">Xem/In Serial/Imei chưa bán, đã bán, ngày
+                      nhập, ngày bán</span>
+                  </a>
+                </li> -->
+                <!-- <li>
+                  <a href="quan-li-han-the.html">
+                    <span class="title">Quản lí hạn thẻ</span>
+                    <span class="des">Xem/in các mốc thời gian hết hạn thẻ bảo
+                      hành Serial/Imei, số lượng tồn tại từng mốc</span>
+                  </a>
+                </li> -->
+                <!-- <li>
+                  <a href="theo-doi-hang-ton.html">
+                    <span class="title">Theo dõi hàng tồn</span>
+                    <span class="des">Xem/in hàng tồn theo các khoảng thời gian
+                      nhập kho</span>
+                  </a>
+                </li> -->
+                <li>
+                  <a href="the-kho-chi-tiet.html">
+                    <span class="title">Thẻ kho chi tiết</span>
+                    <span class="des">Xem/in thẻ kho chi tiết của từng mặt hàng
+                      trong từng kho</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="bao-cao-mua-hang.html">
+                    <span class="title">Báo cáo mua hàng</span>
+                    <span class="des">Xem/in chi tiết báo cáo mua hàng trong
+                      ngày hoặc theo khoảng thời gian</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="submenu-des">Quản lí mua hàng</div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-4" href="#">Bán hàng</a>
+        <!-- Sub menu 4 -->
+        <div class="dropdown-menu" id="sub-4">
+          <a class="dropdown-item" href="don-dat-hang.html">
+            <img src="../assets/images/don-dat-hang.png" class="submenu-icon"
+              alt="">
+            đơn <br> đặt hàng
+          </a>
+          <div class="submenu-group center">
+            <a class="dropdown-item" href="hoa-don-ban-buon.html"><img
+                src="../assets/images/hoa-don-ban-buon-menu.png"
+                class="submenu-icon"
+                alt="">Hóa đơn <br> bán buôn</a>
+            <a class="dropdown-item" href="hoa-don-ban-le.html"><img
+                src="../assets/images/hoa-don-ban-le-menu.png"
+                class="submenu-icon"
+                alt="">Hóa đơn <br> bán lẻ</a>
+            <a class="dropdown-item" href="hang-ban-tra-lai.html"><img
+                src="../assets/images/hang-ban-tra-lai-menu.png"
+                class="submenu-icon"
+                alt="">Hàng bán <br> trả lại</a>
+          </div>
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="thu-tien-khach-hang.html"><img
+                src="../assets/images/thu-tien-khach-hang.png"
+                class="submenu-icon"
+                alt="">Thu tiền <br> khách hàng</a>
+
+            <a class="dropdown-item" href="tinh-gia-ban.html"><img
+                src="../assets/images/tinh-gia-ban.png" class="submenu-icon"
+                alt="">Tính <br> giá bán</a>
+            <!-- <a class="dropdown-item" href="quan-li-khuyen-mai.html"><img
+                src="../assets/images/quan-li-khuyen-mai.png"
+                class="submenu-icon"
+                alt="">Quản lí <br> khuyến mãi</a> -->
+            <!-- <a class="dropdown-item" href="quan-li-doanh-so.html"><img
+                src="../assets/images/quan-li-doanh-so.png" class="submenu-icon"
+                alt="">Quản lí <br> doanh số</a> -->
+            <div class="submenu-bctk d-inline position-relative">
+              <a class="dropdown-item have-menu-child pt-13" href="#"
+                data-menu="bctk1"><img
+                  src="../assets/images/bctk.png" class="submenu-icon"
+                  alt=""><span>BC_TK</span></a>
+              <ul class="menu-child menu-child-bh" id="bctk1">
+                <li>
+                  <a href="bao-cao-ban-hang.html">
+                    <span class="title">Báo cáo bán hàng</span>
+                    <span class="des">Xem/in chi tiết báo cáo bán hàng trong
+                      ngày hoặc theo khoảng thời gian </span>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="tong-hop-ban-hang.html">
+                    <span class="title">Tổng hợp bán hàng</span>
+                    <span class="des">Xem/in báo cáo bán hàng/hàng bán trả lại/
+                      thanh toán và công nợ</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="thu-chi-chot-ca.html" class="border-bt">
+                    <span class="title">Thu - Chi/Chốt ca</span>
+                    <span class="des">Xem/in tất cả các khoảng thu, chi(Trả tiền
+                      nhà cung cấp, thu tiền khách hàng,...)</span>
+                  </a>
+                </li> -->
+                <!-- <li>
+                  <a href="so-cskh.html">
+                    <span class="title">Sổ CSKH</span>
+                    <span class="des">Xem/In sổ chăm sóc khách hàng theo từng
+                      nhân viên xuất bán..
+                      nhập, ngày bán</span>
+                  </a>
+                </li> -->
+                <!-- <li>
+                  <a href="doanh-thu-theo-nhom.html">
+                    <span class="title">Doanh thu theo nhóm hàng</span>
+                    <span class="des">Xem/In doanh thu theo nhóm hàng cấp 1, có
+                      tính % trên tổng doanh thu</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tang-truong-doanh-so.html">
+                    <span class="title">Tăng trưởng doanh số</span>
+                    <span class="des">Xem/in tổng hợp so sánh doanh số của các
+                      tháng trong năm</span>
+                  </a>
+                </li> -->
+                <li>
+                  <a href="loi-nhuan.html">
+                    <span class="title">Lợi nhuận</span>
+                    <span class="des">Xem/in lợi nhuận theo các khoảng thời
+                      gian, chi nhánh bán hàng...</span>
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="cong-no-phai-thu-tra.html">
+                    <span class="title">Công nợ phải thu, phải trả</span>
+                    <span class="des">Xem/in khách hàng nợ, nợ nhà cung cấp</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="cong-no-qua-han.html">
+                    <span class="title">Công nợ đến + quá hạn</span>
+                    <span class="des">Xem/in công nợ khách hàng, nhà cung cấp
+                      đến hoặc quá hạn theo từng hóa đơn..</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="doi-chieu-cong-no.html">
+                    <span class="title">Đối chiếu công nợ</span>
+                    <span class="des">Đối chiếu xuất, nhập, thu, chi, công nợ
+                      đầu kỳ, tốn cuối kỳ,...</span>
+                  </a>
+                </li> -->
+                <li>
+                  <a href="lich-su-mua-ban.html">
+                    <span class="title">Lịch sử mua bán</span>
+                    <span class="des">Xem/In lịch sử mua, bán, thu, chi của từng
+                      khách hàng theo khoảng thời gian..</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="submenu-des">Quản lí bán hàng</div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown" href="#" data-sub="sub-5">Chuyển kho</a>
+        <!-- Chuyển kho -->
+        <div class="dropdown-menu" id="sub-5">
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="danh-sach-phieu-chuyen-kho.html">
+              <img src="../assets/images/nhap-xuat-kho-noi-bo.png"
+                class="submenu-icon"
+                alt="">
+              nhập-xuất <br> kho nội bộ
+            </a>
+            <div class="submenu-bctk d-inline position-relative">
+              <a class="dropdown-item have-menu-child pt-13" href="#"
+                data-menu="pck1"><img src="../assets/images/bctk.png"
+                  class="submenu-icon" alt=""><span>BC_TK</span></a>
+              <ul class="menu-child" id="pck1">
+                <li>
+                  <a href="bao-cao-chuyen-kho.html">
+                    <span class="title">Báo cáo chuyển kho nội bộ</span>
+                    <span class="des">Báo cáo chuyển kho nội bộ</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="submenu-des">Xuất nhập kho nội bộ</div>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-6" href="#">KHTT</a>
+        <div class="dropdown-menu" id="sub-6">
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="khach-hang-than-thiet.html">
+              <img src="../assets/images/khach-hang-than-thiet.png"
+                class="submenu-icon"
+                alt="">
+              Khách hàng <br> thân thiết
+            </a>
+            <a class="dropdown-item" href="quan-li-in-khtt.html">
+              <img src="../assets/images/quan-li-in-va-cap-the.png"
+                class="submenu-icon"
+                alt="">
+              QL in và <br> cấp thẻ khtt
+            </a>
+          </div>
+          <div class="submenu-des">Quản lí thông tin khách hàng thân thiết</div>
+        </div>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-7" href="#">Quỹ - Ngân Hàng</a>
+        <!-- Quỹ - ngân hàng -->
+        <div class="dropdown-menu" id="sub-7">
+          <div class="submenu-group-all">
+            <a class="dropdown-item pt-13" href="" data-toggle="modal"
+              data-target="#so-quy">
+              <img src="../assets/images/so-quy.png" class="submenu-icon"
+                alt="">
+              Sổ_Quỹ
+            </a>
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#so-ngan-hang">
+              <img src="../assets/images/so-ngan-hang.png" class="submenu-icon"
+                alt="">
+              sổ <br> Ngân Hàng
+            </a>
+          </div>
+
+          <div class="submenu-group center">
+            <a class="dropdown-item" href="phieu-chi.html">
+              <img src="../assets/images/phieu-chi.png" class="submenu-icon"
+                alt="">
+              Phiếu <br> chi
+            </a>
+            <a class="dropdown-item" href="phieu-thu.html">
+              <img src="../assets/images/phieu-thu.png" class="submenu-icon"
+                alt="">
+              Phiếu <br> thu
+            </a>
+          </div>
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#so-du-quy">
+              <img src="../assets/images/so-du-quy.png" class="submenu-icon"
+                alt="">
+              Sổ dư <br> quỹ
+            </a>
+            <a class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#so-du-ngan-hang">
+              <img src="../assets/images/so-du-ngan-hang.png"
+                class="submenu-icon"
+                alt="">
+              sổ dư <br> Ngân Hàng
+            </a>
+          </div>
+          <div class="submenu-des">Sổ quỹ tiền mặt</div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-8" href="#">Báo cáo</a>
+        <!-- Báo cáo -->
+        <div class="dropdown-menu" id="sub-8">
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="thong-ke-bao-cao.html">
+              <img src="../assets/images/thong-ke-bao-cao.png"
+                class="submenu-icon"
+                alt="">
+              Thống kê báo cáo <br> tổng hợp
+            </a>
+          </div>
+          <div class="submenu-des">Tổng hợp thống kê, báo cáo</div>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-9" href="#">Cửa sổ</a>
+        <div class="dropdown-menu" id="sub-9">
+          <div class="submenu-group-all">
+            <a class="dropdown-item pt-25" href="#">Biểu tượng</a>
+            <a class="dropdown-item pt-25" href="#">Thác nước</a>
+            <a class="dropdown-item pt-25" href="#">Tiêu đề dọc</a>
+            <a class="dropdown-item pt-25" href="#">Tiêu đề ngang</a>
+            <a class="dropdown-item pt-25" href="#">Đóng tất cả các cửa sổ</a>
+            <a class="dropdown-item pt-25" href="#">Hiển thị theo TAbs</a>
+          </div>
+          <div class="submenu-des">Cửa sổ hiển thị</div>
+        </div>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-10" href="#">Tiện ích</a>
+        <!-- Báo cáo -->
+        <div class="dropdown-menu" id="sub-10">
+          <div class="submenu-group right">
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/gui-tin.png" class="submenu-icon"
+                alt="">
+              Gửi tin <br> và màn hình cho Mona
+            </a>
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/ghi-ra-man-hinh.png"
+                class="submenu-icon"
+                alt="">
+              ghi màn hình <br> ra file
+            </a>
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/may-in.png" class="submenu-icon"
+                alt="">
+              in màn hình <br> ra máy in
+            </a>
+          </div>
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/gui-tap-tin.png" class="submenu-icon"
+                alt="">
+              gửi file log <br> cho Mona
+            </a>
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/close-menu.png" class="submenu-icon"
+                alt="">
+              Xóa <br> Layout Files
+            </a>
+          </div>
+          <div class="submenu-des">Tiện ích</div>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-11" href="#">Trợ giúp</a>
+        <div class="dropdown-menu" id="sub-11">
+          <div class="submenu-group right">
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/tro-giup.png" class="submenu-icon"
+                alt="">
+              Nội dung <br> trợ giúp
+            </a>
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/tro-giup-online.png"
+                class="submenu-icon"
+                alt="">
+              Trợ giúp <br> online
+            </a>
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/thong-tin.png" class="submenu-icon"
+                alt="">
+              thông tin <br> bản quyền
+            </a>
+          </div>
+          <div class="submenu-group-all">
+            <a class="dropdown-item" href="#">
+              <img src="../assets/images/gui-email-menu.png"
+                class="submenu-icon"
+                alt="">
+              Gửi <br> email
+            </a>
+            <a class="dropdown-item pt-13" href="#">
+              <img src="../assets/images/teamview.png" class="submenu-icon"
+                alt="">
+              TeamViewer
+            </a>
+            <a class="dropdown-item pt-13" href="#">
+              <img src="../assets/images/liveupload.png" class="submenu-icon"
+                alt="">
+              Liveupdate
+            </a>
+          </div>
+          <div class="submenu-des">Trợ giúp</div>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link dropdown" data-sub="sub-12" href="#">Add-Ins</a>
+        <div class="dropdown-menu" id="sub-12">
+          <a class="dropdown-item pt-13" href="#">
+            <img src="../assets/images/cross-check.png" class="submenu-icon"
+              alt="">
+            Cross_Check
+          </a>
+          <div class="submenu-group left">
+            <a class="dropdown-item" href="import-ton-dau-phai-thu.html">
+              <img src="../assets/images/ton-dau-phai-thu.png"
+                class="submenu-icon"
+                alt="">
+              Import Tồn đầu <br>
+              Công nợ phải thu
+            </a>
+            <a class="dropdown-item" href="import-ton-dau-phai-tra.html">
+              <img src="../assets/images/ton-dau-phai-tra.png"
+                class="submenu-icon"
+                alt="">
+              Import Tồn đầu <br>
+              Công nợ phải trả
+            </a>
+          </div>
+          <div class="submenu-des">Add-Ins</div>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+<!-- <div class="wrap-bottom"></div> -->
+<div class="modal fade default-popup popup-so-quy" id="so-quy" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Tổng
+                    hợp quỹ</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-border mt-3">
+                                <p class="box-border__title">
+                                    Tiêu chí
+                                </p>
+                                <div class="form-check mb-2">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span
+                                            class="ml-2">Tháng
+                                            hiện hành</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""
+                                            class="ml-2"><span>Khoảng thời gian</span>
+                                    </label>
+                                </div>
+                                <div class="box-choose-time mt-3">
+                                    <p class="mr-2">Từ</p>
+                                    <input class="datepicker mr-2 col-4 p-0"
+                                        id="chooseDate_To"
+                                        data-date-format="mm/dd/yyyy">
+                                    <p class="mr-2">Đến</p>
+                                    <input class="datepicker mr-2 col-4 p-0"
+                                        id="chooseDate_Form"
+                                        data-date-format="mm/dd/yyyy">
+                                    <select name="" id="" class="mr-2">
+                                        <option value="">Hôm nay</option>
+                                        <option value="">Hôm sau</option>
+                                        <option value="">Hôm bữa</option>
+                                    </select>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""
+                                            class="ml-2"><span
+                                            style="text-decoration: underline;">Chỉ
+                                            xem sổ
+                                            quỹ</span>
+                                    </label>
+                                </div>
+                                <div class="wrap-height-table-quy">
+                                    <table class="table display"
+                                        id="table-tonghopquy" style="width:
+                                        100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên chi nhánh</th>
+                                                <th><span>Chọn </span><input
+                                                        type="checkbox"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Test</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input"
+                                                    value=""
+                                                    class="ml-2"><span>Chọn tất
+                                                    cả các chi nhánh</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <button class="btn btn-success"
+                                            data-toggle="modal"
+                                            data-target="#so-du-quy">Khai
+                                            báo
+                                            số dư quỹ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Xem chi tiết quỹ</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-so-du-quy" id="so-du-quy"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Khởi
+                    tạo/ điều chỉnh số dư quỹ tiền mặt</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display" style="width:
+                                    100%;" id="table-so-du-quy">
+                                    <thead>
+                                        <tr>
+                                            <th>Chi nhánh</th>
+                                            <th>Tồn hiện hành (VND)</th>
+                                            <th>Ngày vào sổ</th>
+                                            <th>Ngày sửa</th>
+                                            <th>Ngày tác động</th>
+                                            <th>Ghi chú</th>
+                                            <th>Theo dõi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#them-so-du-quy">Thêm</button>
+                <button type="button" class="btn btn-primary">Sửa</button>
+                <button type="button" class="btn btn-primary">Hiệu chỉnh</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-them-so-du-quy" id="them-so-du-quy"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Sổ
+                    quỹ</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" class="default-form">
+                                <div class="form-group">
+                                    <label for="">Chi nhánh công ty</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngày vào sổ(Số dư ngày)</label>
+                                    <input type="text" class="choose-date col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư(VND)</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <div class="form-check col-7
+                                        p-0">
+                                        <label class="form-check-label"
+                                            style="margin-left: 13px;">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value=""><span class="ml-2">Theo
+                                                dõi</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade default-popup popup-so-ngan-hang" id="so-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Quỹ
+                    và ngân hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab" href="#xem-1" role="tab"
+                            aria-controls="home" aria-selected="true">Xem theo
+                            chi nhánh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                            href="#xem-2" role="tab" aria-controls="profile"
+                            aria-selected="false">Xem theo từng tài khoản</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="xem-1"
+                        role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-border mt-3">
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input"
+                                                    value=""><span
+                                                    class="ml-2">Tháng
+                                                    hiện hành</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input"
+                                                    value=""
+                                                    class="ml-2"><span>Khoảng
+                                                    thời gian</span>
+                                            </label>
+                                        </div>
+                                        <div class="box-choose-time col-6 p-0
+                                            mt-3
+                                            ml-0">
+                                            <p class="mr-2">Từ</p>
+                                            <input class="datepicker mr-2 col-4
+                                                p-0"
+                                                id="chooseDate_To"
+                                                data-date-format="mm/dd/yyyy">
+                                            <p class="mr-2">Đến</p>
+                                            <input class="datepicker mr-2 col-4
+                                                p-0"
+                                                id="chooseDate_Form"
+                                                data-date-format="mm/dd/yyyy">
+                                            <select name="" id="" class="mr-2">
+                                                <option value="">Hôm nay</option>
+                                                <option value="">Hôm sau</option>
+                                                <option value="">Hôm bữa</option>
+                                            </select>
+                                        </div>
+                                        <div class="wrap-height-table-quy mt-3">
+                                            <table class="table display"
+                                                id="table-snh" style="width:
+                                                100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên chi nhánh</th>
+                                                        <th><span>Chọn </span><input
+                                                                type="checkbox"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Test</td>
+                                                        <td><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <label
+                                                        class="form-check-label">
+                                                        <input type="checkbox"
+                                                            class="form-check-input"
+                                                            value=""
+                                                            class="ml-2"><span>Chọn
+                                                            tất
+                                                            cả các chi nhánh</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <button class="btn btn-success"
+                                                    data-toggle="modal"
+                                                    data-target="#so-du-ngan-hang">Khai
+                                                    báo
+                                                    số dư quỹ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="xem-2" role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="table display" style="width: 100%;"
+                                id="table-taikhoan">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mã ngân hàng</th>
+                                        <th>Tên ngân hàng</th>
+                                        <th>Chủ TK</th>
+                                        <th>Số TK</th>
+                                        <th>Ghi chú</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Đồng ý</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-so-du-quy" id="so-du-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Khởi
+                    tạo/ điều chỉnh số dư ngân hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display" style="width:
+                                    100%;" id="table-so-du-ngan-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>Chi nhánh</th>
+                                            <th>Tồn hiện hành (VND)</th>
+                                            <th>Ngày vào sổ</th>
+                                            <th>Ngày sửa</th>
+                                            <th>Ngày tác động</th>
+                                            <th>Ghi chú</th>
+                                            <th>Theo dõi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#them-so-du-ngan-hang">Thêm</button>
+                <button type="button" class="btn btn-primary">Sửa</button>
+                <button type="button" class="btn btn-primary">Hiệu chỉnh</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-them-so-du-quy"
+    id="them-so-du-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Ngân
+                    hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" class="default-form">
+                                <div class="form-group">
+                                    <label for="">Chi nhánh công ty</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngân hàng</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngày vào sổ(Số dư ngày)</label>
+                                    <input type="text" class="choose-date col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư(VND)</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <div class="form-check col-7
+                                        p-0">
+                                        <label class="form-check-label"
+                                            style="margin-left: 13px;">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value=""><span class="ml-2">Theo
+                                                dõi</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade default-popup popup-so-du-quy" id="so-du-quy"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Khởi
+                    tạo/ điều chỉnh số dư quỹ tiền mặt</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display" style="width:
+                                    100%;" id="table-so-du-quy">
+                                    <thead>
+                                        <tr>
+                                            <th>Chi nhánh</th>
+                                            <th>Tồn hiện hành (VND)</th>
+                                            <th>Ngày vào sổ</th>
+                                            <th>Ngày sửa</th>
+                                            <th>Ngày tác động</th>
+                                            <th>Ghi chú</th>
+                                            <th>Theo dõi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#them-so-du-quy">Thêm</button>
+                <button type="button" class="btn btn-primary">Sửa</button>
+                <button type="button" class="btn btn-primary">Hiệu chỉnh</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-them-so-du-quy" id="them-so-du-quy"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Sổ
+                    quỹ</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" class="default-form">
+                                <div class="form-group">
+                                    <label for="">Chi nhánh công ty</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngày vào sổ(Số dư ngày)</label>
+                                    <input type="text" class="choose-date col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư(VND)</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <div class="form-check col-7
+                                        p-0">
+                                        <label class="form-check-label"
+                                            style="margin-left: 13px;">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value=""><span class="ml-2">Theo
+                                                dõi</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade default-popup popup-so-du-quy" id="so-du-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Khởi
+                    tạo/ điều chỉnh số dư ngân hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display" style="width:
+                                    100%;" id="table-so-du-ngan-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>Chi nhánh</th>
+                                            <th>Tồn hiện hành (VND)</th>
+                                            <th>Ngày vào sổ</th>
+                                            <th>Ngày sửa</th>
+                                            <th>Ngày tác động</th>
+                                            <th>Ghi chú</th>
+                                            <th>Theo dõi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#them-so-du-ngan-hang">Thêm</button>
+                <button type="button" class="btn btn-primary">Sửa</button>
+                <button type="button" class="btn btn-primary">Hiệu chỉnh</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade default-popup popup-them-so-du-quy"
+    id="them-so-du-ngan-hang"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Ngân
+                    hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" class="default-form">
+                                <div class="form-group">
+                                    <label for="">Chi nhánh công ty</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngân hàng</label>
+                                    <select name="" class="col-7 p-0" id="">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngày vào sổ(Số dư ngày)</label>
+                                    <input type="text" class="choose-date col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số dư(VND)</label>
+                                    <input type="text" class="col-7
+                                        p-0">
+                                </div>
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <div class="form-check col-7
+                                        p-0">
+                                        <label class="form-check-label"
+                                            style="margin-left: 13px;">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value=""><span class="ml-2">Theo
+                                                dõi</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade form-small form-doi-mat-khau default-popup"
+    id="form-doi-mat-khau" tabindex="-1" role="dialog"
+    aria-labelledby="form-add-group-user" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLabel">Đổi
+                    mật khẩu</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tên
+                            truy cập:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mật
+                            khẩu cũ:</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mật
+                            khẩu mới:</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Nhắc
+                            mật
+                            khẩu mới:</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Thoát</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade default-popup popup-thoat-chuong-trinh"
+    id="thoat-chuong-trinh" tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle"><i
+                        class="fas
+                        fa-question-circle"></i>Question</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc muốn thoát không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Có</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Không</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Tùy chọn -->
+<div class="modal fade default-popup" id="tuy-chon" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Cấu
+                    hình</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-white">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab" href="#home"
+                            role="tab" aria-controls="home"
+                            aria-selected="true">Cài đặt chung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab"
+                            data-toggle="tab" href="#profile"
+                            role="tab" aria-controls="profile"
+                            aria-selected="false">Báo cáo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab"
+                            data-toggle="tab" href="#contact"
+                            role="tab" aria-controls="contact"
+                            aria-selected="false">Cài đặt khác</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="toan-he-thong-tab"
+                            data-toggle="tab" href="#toan-he-thong"
+                            role="tab" aria-controls="contact"
+                            aria-selected="false">Cài đặt toàn hệ thống</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home"
+                        role="tabpanel" aria-labelledby="home-tab">
+                        <form action="" class="default-form form-tuy-chon mt-4">
+                            <div class="form-group">
+                                <label for="">Tên công ty</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Logo công ty</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-row mt-5">
+                                <div class="col-left col">
+                                    <div class="box-shape"></div>
+                                </div>
+                                <div class="col-right col">
+                                    <div class="form-group">
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Điện thoại</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Fax</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Mã vùng</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Quốc gia</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="profile"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="box-border mt-5">
+                            <p class="box-border__title">Tùy chọn cho báo cáo</p>
+                            <form action="" class="form-bao-cao">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            tên
+                                            công ty</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            địa
+                                            chỉ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            điện thoại công ty</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            fax
+                                            công ty</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            số
+                                            tiền bằng chữ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>In
+                                            logo công ty</span>
+                                    </label>
+                                </div>
+                                <div class="form-row">
+                                    <input type="file" value="Máy in">
+                                </div>
+                                <div class="form-row">
+                                    <label for="">Ngôn ngữ BC</label>
+                                    <select name="" id="" class="ml-3">
+                                        <option value="">Tiếng Việt</option>
+                                        <option value="">Tiếng Anh</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab">
+                        <div class="box-border mt-5">
+                            <p class="box-border__title">Lựa chọn chức năng cảnh
+                                báo</p>
+                            <form action="" class="form-bao-cao">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Cảnh
+                                            báo mua nợ quá hạn</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Cảnh
+                                            báo bán nợ quá hạn</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Cảnh
+                                            báo hết hàng</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Cho
+                                            phép copy giá trị trên cell của grid</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="toan-he-thong"
+                        role="tabpanel"
+                        aria-labelledby="toan-he-thong-tab">
+                        <div class="box-border mt-5">
+                            <p class="box-border__title">Lựa chọn chức năng cảnh
+                                báo</p>
+                            <form action="" class="form-bao-cao default-form">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Chiết
+                                            khấu thẳng
+                                            vào giá khi khuyến mãi</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Cho
+                                            phép sửa số phiếu/ số chứng từ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Hiện
+                                            thị cột giá ngoại tệ khi nhập xuất</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Hiện
+                                            thì Add-in khi bán buôn/lẻ</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox"
+                                            class="form-check-input" value=""><span>Tự
+                                            động điền số tiền khách đưa
+                                            khi thu tiền bán lẻ
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="mr-3 col-5">Khóa dữ
+                                        liệu đến
+                                        ngày</label>
+                                    <input type="text" class="choose-date
+                                        col-6">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="mr-3 col-5">Chỉ được
+                                        xem báo
+                                        cáo từ ngày
+                                        ngày</label>
+                                    <input type="text" class="choose-date
+                                        col-6">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main class="wrapper">
+    <div class="wrap-table">
+    
+    <div class="container-fluid">
+        <div class="wrap-table__button">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="list-button text-left">
+                        <!-- Button thêm -->
+                        <a href="#" class="btn btn-add inline"
+                            data-toggle="modal"
+                            data-target="#them-order"><img
+                                src="../assets/images/btn-add.png"
+                                alt="" class="inline">
+                            <span
+                                class="inline">Thêm</span></a>
+                        <!-- Button Sửa -->
+                        <a href="#" class="btn btn-fix inline"
+                            data-toggle="modal"
+                            data-target="#form-add-group-user"><img
+                                src="../assets/images/btn-fix.png"
+                                alt="" class="inline"><span
+                                class="inline">Sửa</span></a>
+                        <!-- Button Xóa -->
+                        <a href="#" class="btn btn-del inline"><img
+                                src="../assets/images/btn-del.png"
+                                alt="" class="inline"><span
+                                class="inline">Xóa</span></a>
+                        <a href="#" class="btn btn-import
+                            inline"><img
+                                src="../assets/images/btn-import.png"
+                                alt="" class="inline"><span class="inline">nạp</span></a>
+                        <a href="#" class="btn btn-print
+                            inline"><img
+                                src="../assets/images/btn-print.png"
+                                alt="" class="inline"><span class="inline">In</span></a>
+                        <a href="#" class="btn btn-export
+                            inline"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-choose-time">
+                        <p class="mr-2">Trạng thái đơn hàng</p>
+                        <select name="" id="" class="mr-4 col-2 p-0">
+                            <option value="">Đang thực hiện</option>
+                            <option value="">Bị hủy </option>
+                            <option value="">Đã hoàn tất</option>
+                        </select>
+
+                        <p class="mr-2">Từ</p>
+                        <input class="datepicker mr-2" id="chooseDate_To"
+                            data-date-format="mm/dd/yyyy">
+                        <p class="mr-2">Đến</p>
+                        <input class="datepicker mr-2" id="chooseDate_Form"
+                            data-date-format="mm/dd/yyyy">
+
+                        <select name="" id="" class="mr-2">
+                            <option value="">Hôm nay</option>
+                            <option value="">Hôm sau</option>
+                            <option value="">Hôm bữa</option>
+                        </select>
+
+                        <p class="mr-3">Chi nhánh</p>
+                        <select name="" id="" class="mr-2 col-2 p-0">
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                        </select>
+                        <button class="btn btn-trans">
+                            <img src="../assets/images/loading.png" alt=""
+                                class="inline">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__body">
+            <div class="wrap-height-table">
+                <table class="table display" id="table_ds_phieu_ck"
+                    style="width:
+                    100%;">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Duyệt</th>
+                            <th>PCKCODE</th>
+                            <th>Ngay</th>
+                            <th>Diễn giải</th>
+                            <th>User ID</th>
+                            <th>Người duyệt</th>
+                            <th>Ngày ghi</th>
+                            <th>Ngày duyệt</th>
+                            <th>Chi nhánh xuất</th>
+                            <th>Chi nhánh nhập</th>
+                            <th>Update By</th>
+                            <th>Update Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+
+
+<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/datatables.min.js"></script>
+<!-- <script
+    src="https://cdn.datatables.net/plug-ins/1.10.21/features/scrollResize/dataTables.scrollResize.min.js"></script> -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.datetimepicker.full.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 vertical-content">
+                <div class="footer-info">
+                    <ul class="footer-info__list">
+                        <li class="font-weight-bold text">
+                            Logged in: <span class="name text-uppercase">Mona</span>
+                        </li>
+                        <li>
+                            Current branch: <span class="name text-uppercase">C - dự phòng</span>
+                        </li>
+                        <li class="ml-1">
+                            Database: <span class="name text-uppercase">KIMTHANH</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="footer-search">
+                        <form action="#" method="" class="inline">
+                            <button type="submit" class="inline" ><img src="../assets/images/search.png" alt=""></button>
+                            <input type="text" class="inline" placeholder="Search Help...">
+                        </form>
+                    </div>
+                    <div class="footer-teamviewer">
+                        <span class="inline"><img class="icon" src="../assets/images/teamview-icon.png" alt=""></span>
+                        <span class="inline">TeamViewer</span>
+                    </div>
+                    <div class="footer-time ml-4">
+                        <p class="inline">Last updated: 
+                            <span class="date">22/10/2018</span>
+                            <span class="time">10:27:38 SA</span>
+                        </p>
+                    </div>
+                    <div class="footer-language ml-5">
+                        <div class="box-select inline">
+                            <span class="icon"><i class="fal fa-angle-down"></i></span>
+                            <select name="" id="">
+                                <option value="Vi">Vi</option>
+                                <option value="En">En</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn-language color-white inline">
+                            <span>Language</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

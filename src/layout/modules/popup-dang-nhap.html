@@ -1,0 +1,168 @@
+<div class="modal fade default-popup show active" id="popup-dang-nhap"
+    tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Đăng
+                    nhập</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body position-relative" style="padding-bottom:
+                1.3rem;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-form-login">
+                                <form action="" class="needs-validation"
+                                    novalidate>
+                                    <div class="form-group">
+                                        <label for="uname">Tên đăng nhập:</label>
+                                        <input type="text" class="form-control"
+                                            id="uname" placeholder="Username"
+                                            name="uname" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please
+                                            fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Mật khẩu:</label>
+                                        <input type="password"
+                                            class="form-control" id="pwd"
+                                            placeholder="password"
+                                            name="pswd" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please
+                                            fill out this field.</div>
+                                    </div>
+                                    <div class="action-login mt-4">
+                                        <div class="row">
+                                            <div class="col-md-5 text-left">
+                                                <button type="button" class="btn
+                                                    btn-default btn-info-login">Chi
+                                                    tiết đăng nhập</button>
+                                            </div>
+                                            <div class="col-md-7 text-right">
+                                                <button type="submit" class="btn
+                                                    btn-primary">Đăng nhập</button>
+                                                <button type="button" class="btn
+                                                    btn-secondary">Thoát</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-login">
+                    <div class="info-login__content">
+                        <div class="title">
+                            <p>Thông tin kết nối máy chủ dữ liệu SQL
+                                SERVER</p>
+                        </div>
+                        <div class="box-border mt-5">
+                            <p class="box-border__title">Kiểu kết
+                                nối</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Mạng
+                                        LAN/WAN IP tĩnh</span>
+                                </label>
+                            </div>
+                            <div class="form-check-inline ml-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Mạng
+                                        WAN IP động</span>
+                                </label>
+                            </div>
+                            <div class="form-check-inline ml-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox"
+                                        class="form-check-input"
+                                        value=""><span class="ml-2">Cloud</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box-border mt-2">
+                            <div class="default-form">
+                                <div class="form-group">
+                                    <p>Máy chủ SQL</p>
+                                    <div class="col-8 p-0 position-relative">
+                                        <select name="" id="" class="col-10
+                                            p-0">
+                                            <option value="">1212121121</option>
+                                        </select>
+                                        <span class="search-icon
+                                            color-white
+                                            absolute"
+                                            id="button-danh-sach-nv"
+                                            data-toggle="modal"
+                                            data-target="#them-khach-hang"><i
+                                                class="fal fa-angle-down"></i></span>
+                                    </div>
+
+                                </div>
+                                <div class="form-group mt-3">
+                                    <p>Kiểu xác thực</p>
+                                    <div class="form-check col-8 p-0">
+                                        <label class="form-check-label
+                                            xac-thuc">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value=""><span class="m-2">SQL
+                                                Server
+                                                Authentication</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <p>Tên đăng nhập SQL</p>
+                                    <div class="col-8 p-0 position-relative">
+                                        <input type="text" class="col-10 p-0">
+                                        <span class="search-icon
+                                            color-white
+                                            absolute"
+                                            id="button-danh-sach-nv"
+                                            data-toggle="modal"
+                                            data-target="#them-khach-hang">...</span>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <p>Mật khẩu SQL</p>
+                                    <div class="col-8 p-0">
+                                        <input type="text" class="col-10 p-0">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <p>Tên CSQL</p>
+                                    <div class="col-8 p-0 position-relative">
+                                        <select name="" id="" class="col-10
+                                            p-0">
+                                            <option value="">Kim thanh</option>
+                                        </select>
+                                        <span class="search-icon
+                                            color-white
+                                            absolute"
+                                            id="button-danh-sach-nv"
+                                            data-toggle="modal"
+                                            data-target="#them-khach-hang"><i
+                                                class="fal fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

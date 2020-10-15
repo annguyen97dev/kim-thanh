@@ -1,0 +1,65 @@
+// PADDING
+@mixin pd-lr-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+// MEDIA QUERY MANAGER
+@mixin max-media($point) {
+  @media screen and (max-width: $point) {
+    @content;
+  }
+}
+@mixin min-media($point) {
+  @media screen and (min-width: $point) {
+    @content;
+  }
+}
+
+// DEFAULT
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin default-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+//  ADD COLOR
+@mixin gradient-blue {
+  background: rgb(77, 171, 242);
+  background: linear-gradient(
+    185deg,
+    rgba(77, 171, 242, 1) 0%,
+    rgba(13, 127, 214, 1) 100%
+  );
+}
+
+@mixin gradient-blue-bold {
+  background: rgb(42, 29, 126);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 29, 126, 1) 0%,
+    rgba(25, 134, 218, 1) 100%
+  );
+}
+
+@mixin gradient-green {
+  background: rgb(105, 206, 71);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 206, 71, 1) 0%,
+    rgba(56, 164, 20, 1) 35%
+  );
+}

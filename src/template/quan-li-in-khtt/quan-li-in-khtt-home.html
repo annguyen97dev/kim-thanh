@@ -1,0 +1,231 @@
+<div class="container-fluid wrap-table-2">
+    <div class="bg-white p-3">
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="box-border sidebar-search">
+                    <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                    <div class="box-border mt-3 pt-4">
+                        <p class="box-border__title" style="color: black;">Trạng
+                            thái thẻ</p>
+                        <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Thẻ chưa trả</span>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Thẻ chưa in</span>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Thẻ đã in và đã trả</span>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Thẻ đã in nhưng
+                                    chưa trả</span>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Tất cả</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="list-button mt-3">
+                        <a href="#" class="btn btn-search d-block
+                            mt-2"><img src="../assets/images/btn-search.png"
+                                alt="" class="inline"><span class="inline">Tìm
+                                kiếm</span></a>
+                        <a href="#" class="btn btn-export mt-1
+                            d-block"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block"><img
+                                src="../assets/images/tao-email.png"
+                                alt="" class="inline"><span
+                                class="inline">Gửi mail</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block" data-toggle="modal"
+                            data-target="#tim-kiem-khach-hang"><img
+                                src="../assets/images/them-user.png"
+                                alt="" class="inline"><span
+                                class="inline">Thêm KHTT</span></a>
+                        <a href="#" class="btn btn-save inline mt-1"><img
+                                src="../assets/images/btn-save.png" alt=""
+                                class="inline"><span class="inline">Ghi</span></a>
+                        <a href="#" class="btn btn-close mt-1
+                            inline mt-1"><img
+                                src="../assets/images/btn-close.png"
+                                alt="" class="inline"><span
+                                class="inline">Đóng</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <p class="title-head text-uppercase">Quản lí in và cấp thẻ KHTT</p>
+                <div class="wrap-height-table">
+                    <table class="table display nowrap table-striped row-border
+                        order-column table-khachhang fixed-2-column"
+                        id="table-khtt" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Mã Kh</th>
+                                <th>Tên KH</th>
+                                <th>Ngày sinh</th>
+                                <th>Địa chỉ</th>
+                                <th>Điện thoại</th>
+                                <th>Di động</th>
+                                <th>Hạng thẻ</th>
+                                <th>Ngày cấp</th>
+                                <th>Ngày hết hạn</th>
+                                <th>Ngày mua lần cuối</th>
+                                <th>Tổng tích lũy</th>
+                                <th>Số lần mua</th>
+                                <th>Hiện trạng thẻ</th>
+                                <th>In</th>
+                                <th>Trả thẻ</th>
+                                <th>Ngày trả thẻ</th>
+                                <th>Số lượng xu</th>
+                                <th>Tổng tiền xu</th>
+                                <th>Tổng đã trả</th>
+                                <th>Tổng còn nợ</th>
+                                <th>Tổng xu đã trả</th>
+                                <th>Tổng xu còn nợ</th>
+                                <th>Tỉ lệ nhân xu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup tìm kiếm khách hàng -->
+<div class="modal fade default-popup popup-tim-kiem-mat-hang"
+    id="tim-kiem-khach-hang"
+    tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup">Tìm kiếm khách hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display table-striped"
+                                    style="width: 100%;"
+                                    id="table-tim-kiem-khach-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Mã KH</th>
+                                            <th>Tên KH</th>
+                                            <th>Địa chỉ Cty</th>
+                                            <th>Điện thoại</th>
+                                            <th>Di động</th>
+                                            <th>MST</th>
+                                            <th>Alias</th>
+                                            <th>Chọn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td><input type="checkbox"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Chọn</button>
+                <button type="button" class="btn btn-primary">Chọn và thoát
+                </button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Thoát</button>
+
+            </div>
+        </div>
+    </div>
+</div>

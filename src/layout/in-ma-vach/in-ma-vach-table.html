@@ -1,0 +1,441 @@
+<div class="container-fluid wrap-table-2">
+    <div class="table-in-ma-vach">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box-dia-chi box-info">
+                    <p class="title-head">Danh mục nhóm hàng</p>
+                    <div class="content mt-2">
+                        <p class="title-list"><img
+                                src="../../assets/images/tick.png" alt=""
+                                class="inline mr-1"><span class="inline">Nhóm</span>
+                        </p>
+                        <ul class="list-group">
+                            <li>Something - 1</li>
+                            <li>Something - 2</li>
+                            <li>Something - 3</li>
+                            <li>Something - 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="wrap-top">
+                    <p class="title-head">Nhóm hàng</p>
+                    <div class="box-table">
+                        <table class="table display"
+                            id="table-nhom-hang-imv" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Mã hàng</th>
+                                    <th>Tên hàng</th>
+                                    <th>Alias</th>
+                                    <th>Chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wrap-under">
+                    <!-- Button -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="box-button justify-content-start">
+                                <div class="btn-group dropup">
+                                    <button type="button" class="btn btn-default
+                                        mr-1
+                                        btn-nk dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i
+                                            class="fas
+                                            fa-arrow-alt-circle-right"></i>
+                                        Nhập
+                                        từ
+                                        phiếu nhập kho
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"
+                                            data-toggle="modal"
+                                            data-target="#phieu-nhap-kho">Nhập
+                                            mã hàng từ phiếu nhập kho</a>
+                                        <a class="dropdown-item" href="#"
+                                            data-toggle="modal"
+                                            data-target="#phieu-nhap-kho">Nhập
+                                            imei từ phiếu nhập kho</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-default
+                                    btn-nk mr-1" data-toggle="modal"
+                                    data-target="#phieu-chuyen-kho"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Nhập
+                                    từ
+                                    phiếu chuyển kho</button>
+                                <button type="button" class="btn btn-default
+                                    mr-1
+                                    btn-nk" data-toggle="modal"
+                                    data-target="#tim-kiem-mat-hang"><i
+                                        class="fas fa-arrow-alt-circle-right"></i>Nhập
+                                    Barcode mở rộng</button>
+                                <button type="button" class="btn btn-default
+                                    mr-1
+                                    btn-nk"><i
+                                        class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-button">
+                                <label for="">Số lượng bản in</label>
+                                <input type="number" class="ml-3">
+                                <button class="btn btn-default btn-up-down
+                                    ml-5"><i
+                                        class="fal
+                                        fa-angle-down"></i></button>
+                                <button class="btn btn-default btn-up-down
+                                    ml-1"><i
+                                        class="fal
+                                        fa-angle-up"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table mặt hàng dc chọn -->
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <p class="title-head">Mặt hàng được chọn</p>
+                            <div class="wrap-height-table-2">
+                                <table class="table display"
+                                    id="table-mat-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nhóm</th>
+                                            <th>Mã nhóm</th>
+                                            <th>Nhóm cấp</th>
+                                            <th>Nhóm cấp</th>
+                                            <th>Nhóm cấp</th>
+                                            <th>Alias nhỏ</th>
+                                            <th>Mã hàng</th>
+                                            <th>Tên hàng</th>
+                                            <th>Alias mã</th>
+                                            <th>Đơn vị</th>
+                                            <th>Mô tả</th>
+                                            <th>Bảo hành</th>
+                                            <th>Giá nhập</th>
+                                            <th>Giá bán 1</th>
+                                            <th>Giá bán 2</th>
+                                            <th>Hoa hồng 1</th>
+                                            <th>Hoa hồng 2</th>
+                                            <th>Xuất xứ</th>
+                                            <th>Mã NCC</th>
+                                            <th>Ghi chú</th>
+
+                                        </tr>
+                                    </thead>
+
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Thiết lập mẫu in-->
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="box-border">
+                                <p class="box-border__title bg-gray">Thiết lập
+                                    mẫu in</p>
+                                <!-- In header -->
+                                <div class="row-mau">
+                                    <div class="col-left">
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">In
+                                                    Header</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="form-check-inline">
+                                            <input type="text" class="header">
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">Header
+                                                    là
+                                                    tên
+                                                    hàng</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <span class="ml-1 inline">Độ dài
+                                                    tối
+                                                    đa của
+                                                    Tên hàng</span>
+                                                <input type="number"
+                                                    class="inline">
+                                            </label>
+                                        </div>
+                                        <p class="inline">(=0->Không giới hạn)</p>
+                                    </div>
+                                </div>
+                                <!-- In Footer -->
+                                <div class="row-mau">
+                                    <div class="col-left">
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">In
+                                                    Footer</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="form-check-inline">
+
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">Giá
+                                                    bán lẻ</span>
+                                                <input type="text">
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <span class="ml-1 inline">Loại
+                                                    tiền</span>
+                                                <input type="text"
+                                                    class="inline">
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">Giá
+                                                    trong
+                                                    cấu hình mặt hàng</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">Trong
+                                                    quản
+                                                    lí giá</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline ml-5">
+                                            <label class="form-check-label">
+                                                <input type="radio"
+                                                    class="form-check-input
+                                                    inline"
+                                                    value="">
+                                                <span class="ml-1 inline">Giá
+                                                    theo
+                                                    nhóm khách hàng</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="row-mau tru-mg
+                                    justify-content-between
+                                    mt-3">
+                                    <div class="col-3">
+                                        <div class="box-border">
+                                            <p class="box-border__title
+                                                bg-gray">Sắp
+                                                xếp theo mã hàng khi in</p>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox"
+                                                        class="form-check-input"
+                                                        value=""><span>A - Z</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check-inline ml-5">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox"
+                                                        class="form-check-input"
+                                                        value=""> <span>Z - A</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="box-border">
+                                            <p class="box-border__title
+                                                bg-gray">Size</p>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <span>Số cột/trang</span>
+                                                    <input type="number"
+                                                        class="form-check-input"
+                                                        value="">
+                                                </label>
+                                            </div>
+                                            <div class="form-check-inline ml-5">
+                                                <label class="form-check-label">
+                                                    <span>Độ rộng vạch</span>
+                                                    <input type="number"
+                                                        class="form-check-input"
+                                                        value="">
+                                                </label>
+                                            </div>
+                                            <p class="inline">
+                                                (0:tự động, -1:bỏ qua, lấy giá
+                                                trị
+                                                user tự định nghĩa a)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Barcode -->
+                                <div class="row-mau">
+                                    <div class="col-3">
+                                        <div class="box-barcode">
+                                            <label for="">Loại barcode</label>
+                                            <select name="" id="">
+                                                <option value="">Code 128</option>
+                                                <option value="">Code 39</option>
+                                                <option value="">EAN 13</option>
+                                                <option value="">Code 93</option>
+                                                <option value="">EAN 8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box-barcode">
+                                            <label for="">In barcode theo</label>
+                                            <select name="" id="">
+                                                <option value="">Mã hàng</option>
+                                                <option value="">Alias</option>
+                                                <option value="">Số lô + mã hàng</option>
+                                                <option value="">Imei</option>
+                                                <option value="">Số lô/Barcode</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box-barcode">
+                                            <label for="">Mẫu in</label>
+                                            <select name="" id="">
+                                                <option value="">Mẫu rpt In
+                                                    Barcode</option>
+                                                <option value="">Mẫu rpt In
+                                                    Barcode 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row button -->
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="list-button text-left">
+                                <a href="#" class="btn btn-export
+                                    inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nhập</span></a>
+                                <a href="#" class="btn btn-export
+                                    inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Tạo mẫu nhập liệu</span></a>
+                                <a href="#" class="btn btn-export
+                                    inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Xuất</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="list-button text-right">
+                                <a href="#" class="btn btn-print
+                                    inline"><img
+                                        src="../assets/images/btn-print.png"
+                                        alt="" class="inline"><span
+                                        class="inline">In</span></a>
+                                <a href="#" class="btn btn-print
+                                    inline"><img
+                                        src="../assets/images/btn-print.png"
+                                        alt="" class="inline"><span
+                                        class="inline">In tem kệ</span></a>
+                                <a href="#" class="btn btn-out inline"><img
+                                        src="../assets/images/btn-out.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Thoát</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include("popup/phieu-nhap-kho.html")
+@@include("popup/phieu-chuyen-kho.html")
+@@include("popup/tim-kiem-mat-hang.html")

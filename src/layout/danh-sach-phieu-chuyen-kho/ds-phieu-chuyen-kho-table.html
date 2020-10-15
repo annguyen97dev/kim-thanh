@@ -1,0 +1,126 @@
+<div class="wrap-table">
+    <!-- @@include("popup/them-order.html") -->
+    <div class="container-fluid">
+        <div class="wrap-table__button">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="list-button text-left">
+                        <!-- Button thêm -->
+                        <a href="#" class="btn btn-add inline"
+                            data-toggle="modal"
+                            data-target="#them-order"><img
+                                src="../assets/images/btn-add.png"
+                                alt="" class="inline">
+                            <span
+                                class="inline">Thêm</span></a>
+                        <!-- Button Sửa -->
+                        <a href="#" class="btn btn-fix inline"
+                            data-toggle="modal"
+                            data-target="#form-add-group-user"><img
+                                src="../assets/images/btn-fix.png"
+                                alt="" class="inline"><span
+                                class="inline">Sửa</span></a>
+                        <!-- Button Xóa -->
+                        <a href="#" class="btn btn-del inline"><img
+                                src="../assets/images/btn-del.png"
+                                alt="" class="inline"><span
+                                class="inline">Xóa</span></a>
+                        <a href="#" class="btn btn-import
+                            inline"><img
+                                src="../assets/images/btn-import.png"
+                                alt="" class="inline"><span class="inline">nạp</span></a>
+                        <a href="#" class="btn btn-print
+                            inline"><img
+                                src="../assets/images/btn-print.png"
+                                alt="" class="inline"><span class="inline">In</span></a>
+                        <a href="#" class="btn btn-export
+                            inline"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-choose-time">
+                        <p class="mr-2">Trạng thái đơn hàng</p>
+                        <select name="" id="" class="mr-4 col-2 p-0">
+                            <option value="">Đang thực hiện</option>
+                            <option value="">Bị hủy </option>
+                            <option value="">Đã hoàn tất</option>
+                        </select>
+
+                        <p class="mr-2">Từ</p>
+                        <input class="datepicker mr-2" id="chooseDate_To"
+                            data-date-format="mm/dd/yyyy">
+                        <p class="mr-2">Đến</p>
+                        <input class="datepicker mr-2" id="chooseDate_Form"
+                            data-date-format="mm/dd/yyyy">
+
+                        <select name="" id="" class="mr-2">
+                            <option value="">Hôm nay</option>
+                            <option value="">Hôm sau</option>
+                            <option value="">Hôm bữa</option>
+                        </select>
+
+                        <p class="mr-3">Chi nhánh</p>
+                        <select name="" id="" class="mr-2 col-2 p-0">
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                        </select>
+                        <button class="btn btn-trans">
+                            <img src="../assets/images/loading.png" alt=""
+                                class="inline">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__body">
+            <div class="wrap-height-table">
+                <table class="table display" id="table_ds_phieu_ck"
+                    style="width:
+                    100%;">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Duyệt</th>
+                            <th>PCKCODE</th>
+                            <th>Ngay</th>
+                            <th>Diễn giải</th>
+                            <th>User ID</th>
+                            <th>Người duyệt</th>
+                            <th>Ngày ghi</th>
+                            <th>Ngày duyệt</th>
+                            <th>Chi nhánh xuất</th>
+                            <th>Chi nhánh nhập</th>
+                            <th>Update By</th>
+                            <th>Update Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

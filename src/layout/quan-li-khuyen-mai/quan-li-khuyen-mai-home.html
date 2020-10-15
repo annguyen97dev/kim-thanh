@@ -1,0 +1,261 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-button">
+                <!-- Button thêm -->
+                <a href="#" class="btn btn-add inline"
+                    data-toggle="modal"
+                    data-target="#form-add"><img
+                        src="../assets/images/btn-add.png"
+                        alt="" class="inline">
+                    <span
+                        class="inline">Thêm</span></a>
+                <!-- Button Sửa -->
+                <a href="#" class="btn btn-fix inline"
+                    data-toggle="modal"
+                    data-target="#form-add-group-user"><img
+                        src="../assets/images/btn-fix.png"
+                        alt="" class="inline"><span
+                        class="inline">Sửa</span></a>
+                <!-- Button Xóa -->
+                <a href="#" class="btn btn-del inline"><img
+                        src="../assets/images/btn-del.png"
+                        alt="" class="inline"><span
+                        class="inline">Xóa</span></a>
+                <a href="#" class="btn btn-del inline"><img
+                        src="../assets/images/promotion.png" alt=""
+                        class="inline"><span
+                        class="inline">Chia sẻ chương trình khuyến mãi</span></a>
+                <a href="#" class="btn btn-import
+                    inline"><img
+                        src="../assets/images/btn-import.png"
+                        alt="" class="inline"><span
+                        class="inline">nạp</span></a>
+                <a href="#" class="btn btn-print
+                    inline"><img
+                        src="../assets/images/btn-print.png"
+                        alt="" class="inline"><span
+                        class="inline">In</span></a>
+                <a href="#" class="btn btn-export
+                    inline"><img
+                        src="../assets/images/btn-export.png"
+                        alt="" class="inline"><span
+                        class="inline">Xuất</span></a>
+                <a href="#" class="btn btn-question
+                    inline"><img
+                        src="../assets/images/question.png"
+                        alt="" class="inline"><span
+                        class="inline">Hỏi</span></a>
+                <a href="#" class="btn btn-close
+                    inline"><img
+                        src="../assets/images/btn-close.png"
+                        alt="" class="inline"><span
+                        class="inline">Đóng</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white wrap-table p-3 mt-3">
+        <div class="wrap-table__header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-choose-time">
+                        <p class="mr-2">Hiển thị</p>
+                        <select name="" id="" class="mr-4 col-2 p-0">
+                            <option value="">Tất cả</option>
+                            <option value="">Chỉ hiện chương trình đang hoặc
+                                chưa thực hiện</option>
+                        </select>
+                        <p class="mr-2">Từ</p>
+                        <input class="datepicker mr-2" id="chooseDate_To"
+                            data-date-format="mm/dd/yyyy">
+                        <p class="mr-2">Đến</p>
+                        <input class="datepicker mr-2" id="chooseDate_Form"
+                            data-date-format="mm/dd/yyyy">
+                        <select name="" id="" class="mr-2">
+                            <option value="">Hôm nay</option>
+                            <option value="">Hôm sau</option>
+                            <option value="">Hôm bữa</option>
+                        </select>
+                        <button class="btn btn-trans">
+                            <img src="../assets/images/loading.png" alt=""
+                                class="inline">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab"
+                            href="#km-1" role="tab" aria-controls="home"
+                            aria-selected="true">Dánh sách các chương trình
+                            khuyến
+                            mãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                            href="#km-2" role="tab" aria-controls="profile"
+                            aria-selected="false">Chi tiết khuyến mãi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="km-1"
+                        role="tabpanel"
+                        aria-labelledby="home-tab">
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                id="table-km-1"
+                                style="width:
+                                100%;">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>khuyến mãi từ</th>
+                                        <th>Khuyến mãi đến</th>
+                                        <th>Chương trình khuyến mãi</th>
+                                        <th>Mã</th>
+                                        <th>Khóa/dừng KM</th>
+                                        <th>Áp dụng cho tất cả các KM</th>
+                                        <th>Ngày tạo</th>
+                                        <th>User</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="km-2" role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                id="table-km-2"
+                                style="width:
+                                100%;">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mã chương trình KM</th>
+                                        <th>Chương trình KM</th>
+                                        <th>Mã hàng</th>
+                                        <th>Tên hàng</th>
+                                        <th>Giá chuẩn(lẻ)</th>
+                                        <th>Giá KM</th>
+                                        <th>Phần trăm KM(%)</th>
+                                        <th>Khuyến mãi từ</th>
+                                        <th>Khuyễn mãi đến</th>
+                                        <th>Hủy</th>
+                                        <th>Khóa/Dừng KM</th>
+                                        <th>Ngày tạo</th>
+                                        <th>User</th>
+                                        <th>Mô tả</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="note-color">
+                    <div class="note-color__row">
+                        <span class="shape yellow inline mr-2"></span>
+                        <span class="text inline">KM tự tạo</span>
+                    </div>
+                    <div class="note-color__row">
+                        <span class="shape green inline mr-2"></span>
+                        <span class="text inline">KM được chia sẻ</span>
+                    </div>
+                    <div class="note-color__row">
+                        <span class="shape gray inline mr-2"></span>
+                        <span class="text inline">KM đã hết hạn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

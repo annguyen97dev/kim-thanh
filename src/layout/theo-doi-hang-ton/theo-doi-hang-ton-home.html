@@ -1,0 +1,244 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab"
+                        data-toggle="tab" href="#theo-chi-nhanh" role="tab"
+                        aria-controls="home" aria-selected="true">Xem theo
+                        từng chi nhánh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab"
+                        href="#toan-cong-ty" role="tab"
+                        aria-controls="profile"
+                        aria-selected="false">Xem theo từng công ty</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- XEM THEO TỪNG CHI NHÁNH -->
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="theo-chi-nhanh"
+        role="tabpanel"
+        aria-labelledby="home-tab">
+        <div class="container-fluid mt-4 wrap-table-2">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box-border sidebar-search">
+                        <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                        <div class="box-select mt-4 mb-3">
+                            <select name="" id="" class="w-100
+                                select-gray">
+                                <option value="">Xem theo tháng</option>
+                                <option value="">Xem theo tuần</option>
+                            </select>
+                        </div>
+                        <table class="table w-100 mt-3 table-a">
+                            <thead>
+                                <tr>
+                                    <th>Chi nhánh</th>
+                                    <th class="text-center"><input
+                                            type="checkbox"><span
+                                            class="ml-1">Chọn</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C-Dự phòng</td>
+                                    <td class="text-center"><input
+                                            type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>B-Kho hàng</td>
+                                    <td class="text-center"><input
+                                            type="checkbox"></td>
+                                </tr>
+                                <tr>
+                                    <td>A-Cửa hàng</td>
+                                    <td class="text-center"><input
+                                            type="checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="box-select mt-4 mb-3">
+                            <p><b>Chọn nhóm</b></p>
+                            <select name="" id="" class="w-100
+                                select-gray">
+                                <option value="">Linh tinh</option>
+                                <option value="">Mã hủy</option>
+                                <option value="">Phụ tùng xe</option>
+                            </select>
+                        </div>
+                        <div class="form-check-inline mt-2">
+                            <label class="form-check-label">
+                                <input type="checkbox"
+                                    class="form-check-input inline"
+                                    value=""><span class="inline">Chọn
+                                    tất</span>
+                            </label>
+                        </div>
+
+                        <div class="list-button mt-3">
+                            <a href="#" class="btn btn-search d-block"><img
+                                    src="../assets/images/btn-search.png"
+                                    alt="" class="inline"><span
+                                    class="inline">Tìm
+                                    kiếm</span></a>
+
+                            <a href="#" class="btn btn-export mt-1
+                                d-block"><img
+                                    src="../assets/images/btn-export.png"
+                                    alt="" class="inline"><span
+                                    class="inline">Xuất</span></a>
+                            <a href="#" class="btn btn-print mt-1
+                                d-block"><img
+                                    src="../assets/images/btn-print.png"
+                                    alt="" class="inline"><span
+                                    class="inline">In</span></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="content">
+                        <p class="title-head">Nội dung</p>
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                style="width:
+                                100%;"
+                                id="table-theodoihangton">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mã hàng</th>
+                                        <th>Tên hàng</th>
+                                        <th>SL 01-30</th>
+                                        <th>SL 31-60</th>
+                                        <th>SL 61-90</th>
+                                        <th>SL 91-120</th>
+                                        <th>SL>120</th>
+                                        <th>Tổng SL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- XEM TOÀN CÔNG TY -->
+    <div class="tab-pane fade" id="toan-cong-ty" role="tabpanel"
+        aria-labelledby="profile-tab">
+        <div class="container-fluid mt-4 wrap-table-2">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="box-border sidebar-search">
+                        <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                        <div class="box-select mt-4 mb-3">
+                            <select name="" id="" class="w-100
+                                select-gray">
+                                <option value="">Xem theo tháng</option>
+                                <option value="">Xem theo tuần</option>
+                            </select>
+                        </div>
+
+                        <div class="box-select mt-4 mb-3">
+                            <p><b>Chọn nhóm</b></p>
+                            <select name="" id="" class="w-100
+                                select-gray">
+                                <option value="">Linh tinh</option>
+                                <option value="">Mã hủy</option>
+                                <option value="">Phụ tùng xe</option>
+                            </select>
+                        </div>
+                        <div class="form-check-inline mt-2">
+                            <label class="form-check-label">
+                                <input type="checkbox"
+                                    class="form-check-input inline"
+                                    value=""><span class="inline">Chọn
+                                    tất</span>
+                            </label>
+                        </div>
+
+                        <div class="list-button mt-3">
+                            <a href="#" class="btn btn-search d-block"><img
+                                    src="../assets/images/btn-search.png"
+                                    alt="" class="inline"><span
+                                    class="inline">Tìm
+                                    kiếm</span></a>
+
+                            <a href="#" class="btn btn-export mt-1
+                                d-block"><img
+                                    src="../assets/images/btn-export.png"
+                                    alt="" class="inline"><span
+                                    class="inline">Xuất</span></a>
+                            <a href="#" class="btn btn-print mt-1
+                                d-block"><img
+                                    src="../assets/images/btn-print.png"
+                                    alt="" class="inline"><span
+                                    class="inline">In</span></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="content">
+                        <p class="title-head">Nội dung</p>
+                        <div class="wrap-height-table">
+                            <table class="table display table-striped"
+                                style="width:
+                                100%;"
+                                id="table-theodoihangton">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mã hàng</th>
+                                        <th>Tên hàng</th>
+                                        <th>SL 01-30</th>
+                                        <th>SL 31-60</th>
+                                        <th>SL 61-90</th>
+                                        <th>SL 91-120</th>
+                                        <th>SL>120</th>
+                                        <th>Tổng SL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

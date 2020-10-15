@@ -1,0 +1,79 @@
+<div class="modal fade default-popup popup-them-kho" id="them-kho" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Kho</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="box-border">
+                                <p class="box-border__title bg-gray">Thông tin
+                                    kho</p>
+                                <form action="" class="default-form
+                                    form-them-kho">
+                                    <div class="form-group">
+                                        <label for="">Mã kho</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Tên kho</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Chi nhánh</label>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                        <span class="search-icon
+                                            absolute right-30"
+                                            data-toggle="modal"
+                                            data-target="#danh-sach-chi-nhanh"><i
+                                                class="fas
+                                                fa-search"></i></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Vị trí địa lí</label>
+                                        <input type="text">
+                                        <span class="search-icon
+                                            absolute right-30"
+                                            data-toggle="modal"
+                                            data-target="#danh-sach-dia-chi"><i
+                                                class="fas
+                                                fa-search"></i></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Ghi chú</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">TK kế toán</label>
+                                        <input type="text">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include("../popup/danh-sach-chi-nhanh.html")
+@@include("../../khachhang/popup/danh-sach-dia-chi.html")

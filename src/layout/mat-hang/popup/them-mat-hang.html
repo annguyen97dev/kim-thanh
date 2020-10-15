@@ -1,0 +1,226 @@
+<!-- Thêm/sửa mặt hàng -->
+<div class="modal fade default-popup popup-them-mat-hang" id="them-mat-hang"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Thêm/sửa
+                    mặt hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-white">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab"
+                            data-toggle="tab" href="#info-coban" role="tab"
+                            aria-controls="nav-home" aria-selected="true">Thông
+                            tin cơ bản</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab"
+                            data-toggle="tab" href="#them-anh" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">Ảnh</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="info-coban"
+                        role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="box-border mt-4">
+                                        <p class="box-border__title">Thông tin
+                                            chính</p>
+                                        <form action=""
+                                            class="form-them-mat-hang">
+                                            <div class="form-group">
+                                                <label for="">Mã hàng</label>
+                                                <input type="text" class="">
+                                                <div class="form-check ml-3
+                                                    col-5">
+                                                    <label
+                                                        class="form-check-label">
+                                                        <input type="checkbox"
+                                                            class="form-check-input"
+                                                            value=""><span>Có
+                                                            Serial/IMEI</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tên hàng</label>
+                                                <input type="text"
+                                                    class="col-9 p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Alias</label>
+                                                <input type="text"
+                                                    class="col-9 p-0">
+                                            </div>
+                                            <div class="form-group
+                                                position-relative">
+                                                <label for="">Đơn vị tính</label>
+                                                <div class="box-select col-3
+                                                    p-0">
+                                                    <select name="" id=""
+                                                        class="w-100">
+                                                        <option value="">Bên</option>
+                                                        <option value="">Bộ</option>
+                                                    </select>
+                                                    <span class="search-icon
+                                                        absolute right-30"
+                                                        id="button-danh-sach-nv"
+                                                        data-toggle="modal"
+                                                        data-target="#don-vi-tinh"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                                <div class="box-baohanh ml-auto
+                                                    col-5 p-0">
+                                                    <label for="">Bảo hành</label>
+                                                    <select name="" id="">
+                                                        <option value="">Không
+                                                            bảo hành</option>
+                                                        <option value="">1 tháng</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Mô tả</label>
+                                                <textarea name="" id=""
+                                                    rows="3" class="col-9 p-0"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Xuất xứ</label>
+                                                <div class="box-select col-6
+                                                    p-0">
+                                                    <select name="" id=""
+                                                        class="w-100">
+                                                        <option value=""></option>
+                                                    </select>
+                                                    <span class="search-icon
+                                                        absolute right-30"
+                                                        id="button-danh-sach-nv"
+                                                        data-toggle="modal"
+                                                        data-target="#danh-muc-xuat-xu"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Ghi chú</label>
+                                                <textarea name="" id=""
+                                                    rows="3" class="col-9 p-0"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Thuộc loại</label>
+                                                <select name="" id=""
+                                                    class="col-9 p-0">
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">NCC chính</label>
+                                                <div class="box-input col-9
+                                                    p-0">
+                                                    <input type="text">
+                                                    <input type="text">
+                                                    <span class="search-icon
+                                                        absolute"
+                                                        id="button-danh-sach-nv"
+                                                        data-toggle="modal"
+                                                        data-target="#danh-sach-khach-hang"
+                                                        style="right:
+                                                        18px;"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Mã vạch <br> Code
+                                                    128 </label>
+                                                <textarea name="" id=""
+                                                    class="col-9 p-0" rows="3"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box-border mt-4">
+                                        <p class="box-border__title">Thông tin
+                                            khách</p>
+                                        <form action="" class="default-form">
+                                            <div class="form-group">
+                                                <label for="">Giá nhập</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Giá bán lẻ</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Giá bán buôn</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Thuế</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">SL tồn max</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">SL tồn min</label>
+                                                <input type="text" class="col-8
+                                                    p-0">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="them-anh" role="tabpanel"
+                        aria-labelledby="nav-profile-tab">
+                        <div class="box-up-img mt-3 text-center">
+                            <h2>Up ảnh tại đây</h2>
+                            <div class="avatar-upload">
+                                <div class="avatar-edit">
+                                    <input type="file" id="imageUpload"
+                                        accept=".png, .jpg, .jpeg">
+                                    <label for="imageUpload">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                    </label>
+                                </div>
+                                <div class="avatar-preview">
+                                    <div id="imagePreview"
+                                        style="background-image:
+                                        url('../../../assets/images/rose.jpg');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('don-vi-tinh.html')
+@@include('danh-muc-xuat-xu.html')
+@@include('../../chinhanh/popup/danh-sach-khach-hang.html')

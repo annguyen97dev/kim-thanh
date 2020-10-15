@@ -1,0 +1,294 @@
+<!-- Modal -->
+<div class="modal fade default-popup popup-them-chi-nhanh" id="them-chi-nhanh"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Sửa
+                    chi nhánh</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="body_in">
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs" id="myTab"
+                                    role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            id="coban-tab"
+                                            data-toggle="tab" href="#tab-1"
+                                            role="tab" aria-controls="home"
+                                            aria-selected="true">Thông tin cơ
+                                            bản</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="report-tab"
+                                            data-toggle="tab" href="#tab-2"
+                                            role="tab" aria-controls="profile"
+                                            aria-selected="false">Thông tin in
+                                            report</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="code-tab"
+                                            data-toggle="tab" href="#tab-3"
+                                            role="tab" aria-controls="contact"
+                                            aria-selected="false">QR Code</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <!--THÔNG TIN CƠ BẢN-->
+                                    <div class="tab-pane fade show active"
+                                        id="tab-1"
+                                        role="tabpanel"
+                                        aria-labelledby="coban-tab">
+                                        <div class="box-border mt-5">
+                                            <p class="box-border__title">Thông
+                                                tin chi nhánh</p>
+                                            <form class="default-form
+                                                form-them-chi-nhanh"
+                                                action="">
+                                                <div class="form-group">
+                                                    <label for="">Tên chi nhánh</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Mô tả</label>
+                                                    <textarea name="" id=""
+                                                        cols="30" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Thuộc SĐTC</label>
+                                                    <input type="text">
+                                                    <span class="search-icon
+                                                        absolute"
+                                                        data-toggle="modal"
+                                                        data-target="#danh-sach-sdtc"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Khu vực/địa
+                                                        chỉ</label>
+                                                    <input type="text">
+                                                    <span class="search-icon
+                                                        absolute"
+                                                        data-toggle="modal"
+                                                        data-target="#danh-sach-dia-chi"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Ngày đăng kí</label>
+                                                    <input type="text"
+                                                        class="choose-date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Ngày khai
+                                                        trương</label>
+                                                    <input type="text"
+                                                        class="choose-date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Mã khách hàng
+                                                        mặc định</label>
+                                                    <input type="text">
+                                                    <span class="search-icon
+                                                        absolute"
+                                                        data-toggle="modal"
+                                                        data-target="#danh-sach-khach-hang"><i
+                                                            class="fas
+                                                            fa-search"></i></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Nhóm khách
+                                                        hàng mặc định</label>
+                                                    <select name="" id="">
+                                                        <option value="">Test 1</option>
+                                                        <option value="">Test 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Kênh khách
+                                                        hàng</label>
+                                                    <select name="" id="">
+                                                        <option value="">Test 1</option>
+                                                        <option value="">Test 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Số đăng kí
+                                                        kinh doanh</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">
+                                                        Ghi chú
+                                                    </label>
+                                                    <input type="text">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--THÔNG TIN IN REPORT-->
+                                    <div class="tab-pane fade"
+                                        id="tab-2"
+                                        role="tabpanel"
+                                        aria-labelledby="report-tab">
+                                        <div class="box-border mt-5">
+                                            <p class="box-border__title">Thông
+                                                tin in report</p>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <form action=""
+                                                            class="default-form
+                                                            form-thong-tin-report">
+                                                            <div
+                                                                class="form-group">
+                                                                <label for=""></label>
+                                                                <div
+                                                                    class="box-btn
+                                                                    text-left">
+                                                                    <button
+                                                                        class="btn
+                                                                        btn-default">Get
+                                                                        Default</button>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Tên
+                                                                    công ty</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Địa
+                                                                    chỉ</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Điện
+                                                                    thoại</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Fax</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Mã
+                                                                    vùng</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                            <div
+                                                                class="form-group">
+                                                                <label for="">Quốc
+                                                                    gia</label>
+                                                                <input
+                                                                    type="text">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--QR CODE-->
+                                    <div class="tab-pane fade"
+                                        id="tab-3"
+                                        role="tabpanel"
+                                        aria-labelledby="code-tab">
+                                        <div class="box-select list-button
+                                            mt-3">
+                                            <p class="inline"><b>Đơn vị</b></p>
+                                            <select name="" id=""
+                                                class="inline">
+                                                <option value="">Test - 1</option>
+                                                <option value="">Test - 2</option>
+                                                <option value="">Test - 3</option>
+                                            </select>
+                                            <a href="#" class="btn btn-add
+                                                inline" data-toggle="modal"
+                                                data-target="#form-add"><img
+                                                    src="../assets/images/btn-add.png"
+                                                    alt="" class="inline">
+                                                <span class="inline">Thêm</span></a>
+                                        </div>
+                                        <table class="table display
+                                            table-striped"
+                                            id="table-QRcode"
+                                            style="width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>QR Agent ID</th>
+                                                    <th>QR Pos ID</th>
+                                                    <th>QR Access key</th>
+                                                    <th>QR Secret Key</th>
+                                                    <th>QR Url Create
+                                                        Transaction</th>
+                                                    <th>QR Url Query Transaction</th>
+                                                    <th>QR Order Info</th>
+                                                    <th>QR Extra Data</th>
+                                                    <th>Date</th>
+                                                    <th>User</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Thoát</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- @@include("../popup/danh-sach-kenh-kh.html")
+@@include("../popup/danh-sach-dia-chi.html")
+@@include("../popup/danh-muc-nhom-kh.html")
+@@include("../popup/them-user-cskh.html")
+@@include("../../nhanvien/popup/danh-sach-nhan-vien.html") -->
+@@include("../../khachhang/popup/danh-sach-dia-chi.html")
+@@include("../popup/danh-sach-sdtc.html")
+@@include("../popup/danh-sach-khach-hang.html")

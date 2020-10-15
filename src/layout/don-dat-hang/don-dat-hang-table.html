@@ -1,0 +1,521 @@
+
+
+<div class="wrap-table">
+    <div class="container-fluid">
+        <div class="wrap-table__button">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="list-button">
+                        <!-- Button thêm -->
+                        <a href="#" class="btn btn-add inline"
+                            data-toggle="modal"
+                            data-target="#them-order"><img
+                                src="../assets/images/btn-add.png"
+                                alt="" class="inline">
+                            <span
+                                class="inline">Thêm</span></a>
+                        <!-- Button Sửa -->
+                        <a href="#" class="btn btn-fix inline"
+                            data-toggle="modal"
+                            data-target="#form-add-group-user"><img
+                                src="../assets/images/btn-fix.png"
+                                alt="" class="inline"><span
+                                class="inline">Sửa</span></a>
+                        <!-- Button Xóa -->
+                        <a href="#" class="btn btn-del inline"><img
+                                src="../assets/images/btn-del.png"
+                                alt="" class="inline"><span
+                                class="inline">Xóa</span></a>
+                        <!-- Button nạp -->
+                        <a href="#" class="btn btn-import
+                            inline"><img
+                                src="../assets/images/btn-import.png"
+                                alt="" class="inline"><span
+                                class="inline">nạp</span></a>
+                        <!-- Button In -->
+                        <a href="#" class="btn btn-print
+                            inline"><img
+                                src="../assets/images/btn-print.png"
+                                alt="" class="inline"><span
+                                class="inline">In</span></a>
+                        <!-- Button Copy -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/btn-copy.png"
+                                alt="" class="inline"><span
+                                class="inline">Copy</span></a>
+                        <!-- Button xuất -->
+                        <a href="#" class="btn btn-export
+                            inline"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất</span></a>
+                        <!-- Button Copy -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/btn-copy.png"
+                                alt="" class="inline"><span
+                                class="inline">Purchase Order</span></a>
+                        <!-- Button hoa don ban buon -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/hoa-don-ban-buon.png"
+                                alt="" class="inline"><span
+                                class="inline">Hóa đơn bán buôn</span></a>
+                        <!-- Button hoa don ban lẻ -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/hoa-don-ban-le.png"
+                                alt="" class="inline"><span
+                                class="inline">Hóa đơn bán lẻ</span></a>
+                        <!-- Button hàng mua trả lại -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/btn-chuyenkho.png"
+                                alt="" class="inline"><span
+                                class="inline">Phiếu chuyển kho</span></a>
+                        <!-- Button hàng mua trả lại -->
+                        <a href="#" class="btn btn-copy
+                            inline"><img
+                                src="../assets/images/btn-hangtralai.png"
+                                alt="" class="inline"><span
+                                class="inline">Hàng mua trả lại</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__header">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-choose-time">
+                        <p class="mr-2">Trạng thái đơn hàng</p>
+                        <select name="" id="" class="mr-4 col-2 p-0">
+                            <option value="">Đang thực hiện</option>
+                            <option value="">Bị hủy </option>
+                            <option value="">Đã hoàn tất</option>
+                        </select>
+                        <p class="mr-2">Từ</p>
+                        <input class="datepicker mr-2" id="chooseDate_To"
+                            data-date-format="mm/dd/yyyy">
+                        <p class="mr-2">Đến</p>
+                        <input class="datepicker mr-2" id="chooseDate_Form"
+                            data-date-format="mm/dd/yyyy">
+                        <select name="" id="" class="mr-2">
+                            <option value="">Hôm nay</option>
+                            <option value="">Hôm sau</option>
+                            <option value="">Hôm bữa</option>
+                        </select>
+                        <button class="btn bg-trans line-height-0"><img
+                                src="../assets/images/loading.png"
+                                alt="" class="inline"></button>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"
+                                    value=""> <span>Auto refresh</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-table__body">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab"
+                                data-toggle="tab"
+                                href="#ds-don-hang" role="tab"
+                                aria-controls="home"
+                                aria-selected="true">Danh sách đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab"
+                                data-toggle="tab"
+                                href="#dieu-phoi-don-hang" role="tab"
+                                aria-controls="profile"
+                                aria-selected="false">Điều phối đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab"
+                                data-toggle="tab"
+                                href="#chuyen-kho-chia-hang" role="tab"
+                                aria-controls="contact"
+                                aria-selected="false">Chuyển kho - chia hàng</a>
+                        </li>
+                    </ul>
+                    <!--TAB-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="ds-don-hang"
+                            role="tabpanel" aria-labelledby="home-tab">
+                            <div class="wrap-height-table">
+                                <table class="display table table-striped"
+                                    style="width:
+                                    100%;" id="table-don-dat-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Trạng thái</th>
+                                            <th>Đã chuyển(Shipped)</th>
+                                            <th>Số hóa đơn</th>
+                                            <th>Ngày lập phiếu</th>
+                                            <th>Ngày submit</th>
+                                            <th>Tên khách hàng</th>
+                                            <th>Tel</th>
+                                            <th>Tên nhân viên</th>
+                                            <th>Tổng tiền</th>
+                                            <th>Hạn thanh toán</th>
+                                            <th>Diễn giải</th>
+                                            <th>Lý do nhập</th>
+                                            <th>Người lập</th>
+                                            <th>Duyệt</th>
+                                            <th>Người duyệt</th>
+                                            <th>Ngày nhận hàng</th>
+                                            <th>Gửi từ</th>
+                                            <th>Gửi đến</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="dieu-phoi-don-hang"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab">
+                            <div class="wrap-height-table">
+                                <table class="display table table-striped"
+                                    style="width:
+                                    100%;" id="table-dieu-phoi-don-hang">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Chọn</th>
+                                            <th>Trạng thái</th>
+                                            <th>Đã chuyển(Shipped)</th>
+                                            <th>Số phiếu</th>
+                                            <th>Ngày lập phiếu</th>
+                                            <th>Ngày submit</th>
+                                            <th>Tên KH/NCC</th>
+                                            <th>Mã KH/NCC</th>
+                                            <th>Điện thoại</th>
+                                            <th>Nhân viên</th>
+                                            <th>Ghi chú</th>
+                                            <th>User</th>
+                                            <th>Duyệt</th>
+                                            <th>Người duyệt</th>
+                                            <th>Ngày nhận hàng</th>
+                                            <th>Gửi từ</th>
+                                            <th>Gửi đến</th>
+                                            <th>Mã hàng</th>
+                                            <th>Tên hàng</th>
+                                            <th>Số lượng</th>
+                                            <th>Đơn giá</th>
+                                            <th>Thành tiền</th>
+                                            <th>NCC chính</th>
+                                            <th>Số lượng 2</th>
+                                            <th>Đơn giá 2</th>
+                                            <th>Đã chuyển SOPO</th>
+                                            <th>LDNID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#</td>
+                                            <td><input type="checkbox"></td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chuyen-kho-chia-hang"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab">
+                            <div class="list-button bg-gray d-flex
+                                justify-content-start align-items-center">
+                                <div class="dropdown show">
+                                    <a class="btn btn-normal btn-secondary
+                                        dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Actions
+                                    </a>
+                                    <div class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Tạo
+                                            phiếu chuyển kho đến kho hiện hành</a>
+                                        <a class="dropdown-item"
+                                            data-toggle="modal"
+                                            data-target="#danh-sach-kho"
+                                            href="#">Tạo
+                                            phiếu chuyển kho đến các kho đang
+                                            tồn
+                                            tại trên gird
+                                        </a>
+                                        <a class="dropdown-item" href="#">Tạo
+                                            hóa đơn bán buôn cho kho hiện hành</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-add inline"
+                                    data-toggle="modal"
+                                    data-target="#chon-mat-hang"><img
+                                        src="../assets/images/btn-add.png"
+                                        alt=""
+                                        class="inline">
+                                    <span class="inline">Thêm</span></a>
+                                <a href="#" class="btn btn-tick btn-green
+                                    inline" data-toggle="modal"
+                                    data-target="#check-sale"><img
+                                        src="../assets/images/btn-tick.png"
+                                        alt=""
+                                        class="inline"><span class="inline">Check
+                                        sale</span></a>
+                                <a href="#" class="btn btn-tick btn-green
+                                    inline" data-toggle="modal"
+                                    data-target="#check-sale"><img
+                                        src="../assets/images/btn-tick.png"
+                                        alt=""
+                                        class="inline"><span class="inline">Check
+                                        sale all</span></a>
+                                <a href="#" class="btn btn-tick btn-gray
+                                    inline" data-toggle="modal"
+                                    data-target="#error"><img
+                                        src="../assets/images/btn-tick.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Check
+                                        inventory</span></a>
+                                <a href="#" class="btn btn-tick btn-gray
+                                    inline" data-toggle="modal"
+                                    data-target="#question"><img
+                                        src="../assets/images/btn-tick.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Check
+                                        inventory all</span></a>
+                                <a href="#" class="btn btn-add inline
+                                    btn-yellow"
+                                    data-toggle="modal" data-target="#form-add"><img
+                                        src="../assets/images/btn-add.png"
+                                        alt=""
+                                        class="inline">
+                                    <span class="inline">Add column ext</span></a>
+                                <a href="#" class="btn btn-add inline
+                                    btn-yellow"
+                                    data-toggle="modal" data-target="#form-add"><img
+                                        src="../assets/images/btn-add.png"
+                                        alt=""
+                                        class="inline">
+                                    <span class="inline">Add column ext all</span></a>
+                                <a href="#" class="btn btn-tick
+                                    inline" data-toggle="modal"
+                                    data-target="#danh-sach-kho"><img
+                                        src="../assets/images/btn-tick.png"
+                                        alt=""
+                                        class="inline"><span class="inline">Validata
+                                        Total</span></a>
+                                <a href="#" class="btn btn-save inline"><img
+                                        src="../assets/images/btn-save.png"
+                                        alt=""
+                                        class="inline"><span class="inline">Ghi</span></a>
+                                <a href="#" class="btn btn-tick
+                                    inline"><img
+                                        src="../assets/images/btn-open-folder.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Open</span></a>
+                            </div>
+                            <div class="wrap-height-table-2">
+                                <table class="display table table-striped"
+                                    style="width:
+                                    100%;" id="table-ck">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Mã hàng</th>
+                                            <th>Tên hàng</th>
+                                            <th>UNITNAME</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="note-color">
+                        <div class="note-color__row">
+                            <span class="shape yellow inline mr-2"></span>
+                            <span class="text inline">Đang thực hiện(pending)</span>
+                        </div>
+                        <div class="note-color__row">
+                            <span class="shape red inline mr-2"></span>
+                            <span class="text inline">Bị hủy(Cancelled)</span>
+                        </div>
+                        <div class="note-color__row">
+                            <span class="shape gray inline mr-2"></span>
+                            <span class="text inline">Đã hoàn tất(Invoiced)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include("../don-mua-hang/popup/them-order.html")
+@@include("../don-mua-hang/popup/danh-sach-kho.html")
+@@include("../don-mua-hang/popup/check-sale.html")
+@@include("../modules/error.html")
+@@include("../modules/sure.html")

@@ -1,0 +1,117 @@
+<!-- Phiếu nhập kho -->
+<div class="modal fade default-popup popup-phieu-nhap-kho" id="phieu-chuyen-kho"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Tìm
+                    phiếu nhập kho</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="box-border mt-3">
+                        <p class="box-border__title bg-gray">Thông tin
+                            tìm kiếm</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form action="" class="form-nhap-kho
+                                    default-form">
+
+                                    <div class="form-group">
+                                        <label for="">Số phiếu</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group group-ma">
+                                        <label for="">Mã hàng</label>
+                                        <input type="text">
+                                        <span class="search-icon absolute"
+                                            id="button-danh-sach-nv"
+                                            data-toggle="modal"
+                                            data-target="#tim-kiem-mat-hang"><i
+                                                class="fas fa-search"></i></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">IMEI</label>
+                                        <input type="text">
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box-border right">
+                                    <div class="form-check box-border__title
+                                        bg-gray">
+                                        <label class="form-check-label">
+                                            <input type="checkbox"
+                                                class="form-check-input"
+                                                value="">
+                                            <span class="ml-2">Ngày chuyển</span>
+                                        </label>
+                                    </div>
+                                    <div class="box-choose-time">
+                                        <p class="mr-2">Từ</p>
+                                        <input class="datepicker mr-2"
+                                            id="chooseDate_To"
+                                            data-date-format="mm/dd/yyyy">
+                                        <p class="mr-2">Đến</p>
+                                        <input class="datepicker mr-2"
+                                            id="chooseDate_Form"
+                                            data-date-format="mm/dd/yyyy">
+                                        <select name="" id="" class="mr-2">
+                                            <option value="">Hôm nay</option>
+                                            <option value="">Hôm qua</option>
+                                            <option value="">Tuần nay</option>
+                                            <option value="">Tuần trước</option>
+                                            <option value="">Tháng này</option>
+                                            <option value="">Tháng trước</option>
+                                            <option value="">Year 2020</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <table class="table display table-striped"
+                        id="table-form-nhap-kho"
+                        style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>PCKCODE</th>
+                                <th>NGAY</th>
+                                <th>User ID</th>
+                                <th>Duyệt</th>
+                                <th>Người duyệt</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="list-button">
+                    <button href="#" class="btn btn-search
+                        inline"><img
+                            src="../assets/images/btn-search.png"
+                            alt="" class="inline"><span
+                            class="inline">Tìm</span></button>
+                    <button href="#" class="btn btn-out inline"
+                        data-dismiss="modal"><img
+                            src="../assets/images/btn-out.png"
+                            alt="" class="inline"><span
+                            class="inline">Thoát</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include("../popup/tim-kiem-mat-hang.html")

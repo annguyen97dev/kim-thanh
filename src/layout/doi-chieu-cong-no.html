@@ -1,0 +1,237 @@
+
+@@include('./modules/head.html')
+@@include('./modules/header.html')
+
+
+<main class="wrapper bg-white">
+    <div class="container-fluid wrap-table-2">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab"
+                            data-toggle="tab" href="#doichieu-1" role="tab"
+                            aria-controls="home" aria-selected="true">Đối chiếu
+                            công nợ khách hàng chi tiết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                            href="#doichieu-2" role="tab"
+                            aria-controls="profile"
+                            aria-selected="false">Đối chiếu công nợ khách hàng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content mt-4" id="myTabContent">
+            <!-- CN 1 !-->
+            <div class="tab-pane fade show active" id="doichieu-1"
+                role="tabpanel"
+                aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="box-border sidebar-search">
+                            <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                            <!--Time-->
+                            <div class="box-border mt-3">
+                                <p>Hạn thanh toán</p>
+                                <div class="box
+                                    justify-content-between
+                                    d-flex align-items-center">
+                                    <input type="text" class="col-6 p-0
+                                        choose-date">
+                                    <p><b>+</b></p>
+                                    <select name="" class="col-4 p-0" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Chi nhánh -->
+                            <div class="box-select mt-4 mb-3">
+                                <p><b>Chi nhánh</b></p>
+                                <select name="" id="" class="w-100">
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </div>
+
+                            <!-- Khách hàng -->
+                            <div class="box-select mt-3 mb-3">
+                                <p><b>Khách hàng</b></p>
+                                <div class="position-relative">
+                                    <select name="" id="" class="col-10 p-0">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                    <span class="search-icon
+                                        color-white
+                                        absolute" id="button-danh-sach-nv"
+                                        data-toggle="modal"
+                                        data-target="#tim-kiem-khach-hang"><i
+                                            class="fas
+                                            fa-search"></i></span>
+                                </div>
+                            </div>
+
+                            <!--Loại tiền-->
+                            <div class="box-select mt-4 mb-3">
+                                <p><b>Loại tiền</b></p>
+                                <select name="" id="" class="w-100
+                                    select-gray">
+                                    <option value="">Tiền VND</option>
+                                    <option value="">Nguyên tệ</option>
+                                </select>
+                            </div>
+
+                            <!-- Kiểu đối chiếu tổng hợp -->
+                            <div class="box-select mt-4 mb-3">
+                                <p><b>Kiểu đối chiếu tổng hợp</b></p>
+                                <select name="" id="" class="w-100
+                                    select-gray">
+                                    <option value="">Nhập,xuất,thu,chi,nhập
+                                        trả,..</option>
+                                    <option value="">Xuất,thu,nhập,trả,..</option>
+                                    <option value="">Nhập, chi, xuất, trả,..</option>
+                                </select>
+                            </div>
+
+
+                            <div class="list-button mt-3">
+                                <a href="#" class="btn btn-search d-block"><img
+                                        src="../assets/images/btn-search.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Tìm
+                                        kiếm</span></a>
+                                <a href="#" class="btn btn-export mt-1
+                                    d-block"><img
+                                        src="../assets/images/loading.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nạp</span></a>
+                                <a href="#" class="btn btn-export mt-1
+                                    d-block"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Xuất</span></a>
+                                <a href="#" class="btn btn-print mt-1
+                                    d-block"><img
+                                        src="../assets/images/btn-print.png"
+                                        alt="" class="inline"><span
+                                        class="inline">In</span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="content">
+                            <p class="title-head">Nội dung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CN 2 !-->
+            <div class="tab-pane fade" id="doichieu-2" role="tabpanel"
+                aria-labelledby="profile-tab">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="box-border sidebar-search">
+                            <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                            <!--Time-->
+                            <div class="box-border mt-3">
+                                <p>Hạn thanh toán</p>
+                                <div class="box
+                                    justify-content-between
+                                    d-flex align-items-center">
+                                    <input type="text" class="col-6 p-0
+                                        choose-date">
+                                    <p><b>+</b></p>
+                                    <select name="" class="col-4 p-0" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Chi nhánh -->
+                            <div class="box-select mt-4 mb-3">
+                                <p><b>Chi nhánh</b></p>
+                                <select name="" id="" class="w-100">
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </div>
+
+                            <!-- Khách hàng -->
+                            <div class="box-select mt-3 mb-3">
+                                <p><b>Khách hàng</b></p>
+                                <div class="position-relative">
+                                    <select name="" id="" class="col-10 p-0">
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                    <span class="search-icon
+                                        color-white
+                                        absolute" id="button-danh-sach-nv"
+                                        data-toggle="modal"
+                                        data-target="#tim-kiem-khach-hang"><i
+                                            class="fas
+                                            fa-search"></i></span>
+                                </div>
+                            </div>
+
+                            <!--Loại tiền-->
+                            <div class="box-select mt-4 mb-3">
+                                <p><b>Loại tiền</b></p>
+                                <select name="" id="" class="w-100
+                                    select-gray">
+                                    <option value="">Tiền VND</option>
+                                    <option value="">Nguyên tệ</option>
+                                </select>
+                            </div>
+
+                            <div class="list-button mt-3">
+                                <a href="#" class="btn btn-search d-block"><img
+                                        src="../assets/images/btn-search.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Tìm
+                                        kiếm</span></a>
+                                <a href="#" class="btn btn-export mt-1
+                                    d-block"><img
+                                        src="../assets/images/loading.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nạp</span></a>
+                                <a href="#" class="btn btn-export mt-1
+                                    d-block"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Xuất</span></a>
+                                <a href="#" class="btn btn-print mt-1
+                                    d-block"><img
+                                        src="../assets/images/btn-print.png"
+                                        alt="" class="inline"><span
+                                        class="inline">In</span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="content">
+                            <p class="title-head">Nội dung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include("khachhang/popup/tim-kiem-khach-hang.html")
+@@include('./modules/footer-script.html')
+@@include('./modules/footer.html')

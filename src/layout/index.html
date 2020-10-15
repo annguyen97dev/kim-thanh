@@ -1,0 +1,44 @@
+
+@@include('./modules/head.html')
+@@include('./modules/header.html')
+
+
+<main class="wrapper">
+  @@include('./modules/home.html')
+</main>
+
+<script>
+    //validate check 
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+</script>
+@@include("./modules/popup-dang-nhap.html")
+@@include('./modules/footer-script.html')
+
+<script>
+  // login form
+$(window).on('load',function(){
+    $('#popup-dang-nhap').modal('show');
+  });
+
+  $("html").on("click", ".btn-info-login", function() {
+    $(".info-login").fadeToggle();
+  });
+</script>
+@@include('./modules/footer.html')

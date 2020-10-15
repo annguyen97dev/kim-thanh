@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tab-default">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab"
+                        href="#nguoi-su-dung">Người
+                        sử dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#phan-quyen">Phân
+                        quyền</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="nguoi-su-dung">
+        @@include('./tab-user/nguoi-su-dung.html')
+    </div>
+    <div class="tab-pane fade" id="phan-quyen">
+        @@include('./tab-user/phan-quyen.html')
+    </div>
+</div>

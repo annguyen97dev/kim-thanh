@@ -1,0 +1,473 @@
+<div class="modal fade default-popup popup-cong-no" id="cong-no" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Lịch
+                    sử mua bán</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-white">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container-fluid mt-4 wrap-table-2">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="box-border sidebar-search">
+                                            <p class="box-border__title">Tiêu
+                                                chí tìm kiếm</p>
+
+                                            <div class="box-border mt-4">
+                                                <label class="form-check-label
+                                                    box-border__title
+                                                    text-dark">
+                                                    <input type="checkbox"
+                                                        class="form-check-input"
+                                                        value=""><span
+                                                        class="ml-2">Khoảng
+                                                        thời gian</span>
+                                                </label>
+
+                                                <div class="container-fluid">
+                                                    <div class="row m-0">
+                                                        <div class="col-md-6
+                                                            pl-0 pr-1">
+                                                            <p>Từ ngày</p>
+                                                            <input type="text"
+                                                                class="choose-date
+                                                                w-100">
+                                                        </div>
+                                                        <div class="col-md-6
+                                                            pr-0 pl-1">
+                                                            <p>Đến ngày</p>
+                                                            <input type="text"
+                                                                class="choose-date
+                                                                w-100">
+                                                        </div>
+                                                        <div class="col-md-12
+                                                            mt-3 p-0">
+                                                            <select name=""
+                                                                id=""
+                                                                class="w-100
+                                                                select-gray">
+                                                                <option
+                                                                    value="">Ca
+                                                                    sáng</option>
+                                                                <option
+                                                                    value="">Ca
+                                                                    chiều</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Tab panes -->
+                                            <table class="table w-100
+                                                mt-3 table-a">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Chi nhánh</th>
+                                                        <th
+                                                            class="text-center"><input
+                                                                type="checkbox"><span
+                                                                class="ml-1">Chọn</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>C-Dự phòng</td>
+                                                        <td
+                                                            class="text-center"><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>B-Kho hàng</td>
+                                                        <td
+                                                            class="text-center"><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>A-Cửa hàng</td>
+                                                        <td
+                                                            class="text-center"><input
+                                                                type="checkbox"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="box-select mb-3
+                                                mt-3">
+                                                <p>Khách hàng</p>
+                                                <select name="" id=""
+                                                    class="w-100 bg-gray
+                                                    select-gray">
+                                                    <option value="">Test
+                                                        1</option>
+                                                    <option value="">Test
+                                                        2</option>
+                                                    <option value="">Test
+                                                        3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="list-button mt-3">
+                                                <a href="#" class="btn
+                                                    btn-search d-block"><img
+                                                        src="../assets/images/btn-search.png"
+                                                        alt="" class="inline"><span
+                                                        class="inline">Tìm
+                                                        kiếm</span></a>
+
+                                                <a href="#" class="btn
+                                                    btn-export mt-1
+                                                    d-block"><img
+                                                        src="../assets/images/btn-export.png"
+                                                        alt="" class="inline"><span
+                                                        class="inline">Xuất</span></a>
+                                                <a href="#" class="btn btn-print
+                                                    mt-1
+                                                    d-block"><img
+                                                        src="../assets/images/btn-print.png"
+                                                        alt="" class="inline"><span
+                                                        class="inline">In</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="content">
+                                            <div class="box-title-head">
+                                                <p class="title-head-2">Khách
+                                                    hàng:
+                                                    Name, Chi nhánh: ABC</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-btn-tab">
+                                            <div class="row">
+                                                <div class="col-md-3 text-left">
+                                                    <p><b>Giới hạn nợ</b></p>
+                                                    <div class="box-shape">
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-a first">Tồn
+                                                            đầu</div>
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-a active"
+                                                            data-tabs="xuat">1.
+                                                            Xuất</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-left">
+                                                    <p><b>Giới hạn số ngày nợ</b></p>
+                                                    <div class="box-shape">
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-b"
+                                                            data-tabs="xuat-tra">2.
+                                                            Xuất
+                                                            trả</div>
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-b"
+                                                            data-tabs="thu">3.
+                                                            Thu
+                                                        </div>
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-b"
+                                                            data-tabs="nhap">4.
+                                                            Nhập
+                                                        </div>
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-b"
+                                                            data-tabs="nhap-tra">5.
+                                                            Nhập
+                                                            trả</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 text-left">
+                                                    <div class="d-flex
+                                                        justify-content-between
+                                                        align-items-center">
+                                                        <p class="inline"><b>phần
+                                                                trăm thu hồi nợ</b></p>
+                                                        <span
+                                                            class="text-phantram
+                                                            inline">0%</span>
+                                                    </div> <div
+                                                        class="box-shape">
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-a"
+                                                            data-tabs="chi">6.
+                                                            Chi</div>
+                                                        <div
+                                                            class="tab-shape
+                                                            tab-shape-a last"
+                                                            data-tabs="ton-cuoi">Tồn
+                                                            cuối</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-tab">
+                                            <div class="item" id="xuat"
+                                                style="display: block;">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-xuat">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày CT</th>
+                                                                <th>Hạn TT</th>
+                                                                <th>QH</th>
+                                                                <th>Số CT</th>
+                                                                <th>HĐ VAT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Mã hàng</th>
+                                                                <th>Tên hàng</th>
+                                                                <th>Số lượng</th>
+                                                                <th>Đơn giá</th>
+                                                                <th>Thuế</th>
+                                                                <th>Chiết khấu</th>
+                                                                <th>Thành tiền</th>
+                                                                <th>Đã TT</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Lý do</th>
+                                                                <th>Thuế suất</th>
+                                                                <th>Kiểu</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="xuat-tra">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-xuat-tra">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày</th>
+                                                                <th>Số CT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Mã hàng</th>
+                                                                <th>Tên hàng</th>
+                                                                <th>Số lượng</th>
+                                                                <th>Đơn giá</th>
+                                                                <th>Thuế</th>
+                                                                <th>Chiết khấu</th>
+                                                                <th>Thành tiền</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Lý do</th>
+                                                                <th>Thuế suất</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="thu">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-thu">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày</th>
+                                                                <th>Số CT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Số tiễn</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Tiền mặt</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="nhap">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-nhap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày CT</th>
+                                                                <th>Hạn TT</th>
+                                                                <th>QH</th>
+                                                                <th>Số CT</th>
+                                                                <th>HĐ VAT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Mã hàng</th>
+                                                                <th>Tên hàng</th>
+                                                                <th>Số lượng</th>
+                                                                <th>Đơn giá</th>
+                                                                <th>Thuế</th>
+                                                                <th>Chiết khấu</th>
+                                                                <th>Thành tiền</th>
+                                                                <th>Đã TT</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Lý do</th>
+                                                                <th>Thuế suất</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="nhap-tra">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-nhap-tra">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày CT</th>
+                                                                <th>Số CT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Mã hàng</th>
+                                                                <th>Tên hàng</th>
+                                                                <th>Số lượng</th>
+                                                                <th>Đơn giá</th>
+                                                                <th>Thuế</th>
+                                                                <th>Chiết khấu</th>
+                                                                <th>Thành tiền</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Lý do</th>
+                                                                <th>Thuế suất</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="chi">
+                                                <div
+                                                    class="wrap-height-table-2">
+                                                    <table class="table display"
+                                                        style="width: 100%;"
+                                                        id="table-chi">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Ngày</th>
+                                                                <th>Số CT</th>
+                                                                <th>Khách hàng</th>
+                                                                <th>Số tiễn</th>
+                                                                <th>Diễn giải</th>
+                                                                <th>Tiền mặt</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="ton-cuoi"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>

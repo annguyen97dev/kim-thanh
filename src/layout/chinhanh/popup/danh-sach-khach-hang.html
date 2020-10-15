@@ -1,0 +1,812 @@
+<div class="modal fade default-popup popup-danh-sach-khach-hang"
+    id="danh-sach-khach-hang" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title title-popup" id="exampleModalLongTitle">Danh
+                    sách khách hàng</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="list-button text-left">
+                                <a href="#" class="btn btn-add inline"
+                                    data-toggle="modal"
+                                    data-target="#them-khach-hang"><img
+                                        src="../assets/images/btn-add.png"
+                                        alt="" class="inline">
+                                    <span class="inline">Thêm</span></a>
+                                <a href="#" class="btn btn-fix inline"
+                                    data-toggle="modal"
+                                    data-target="#form-add-group-user"><img
+                                        src="../assets/images/btn-fix.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Sửa</span></a>
+                                <a href="#" class="btn btn-del inline"><img
+                                        src="../assets/images/btn-del.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Xóa</span></a>
+                                <a href="#" class="btn btn-fix inline"><img
+                                        src="../assets/images/btn-import.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nạp</span></a>
+                                <a href="#" class="btn btn-send-email
+                                    inline"><img
+                                        src="../assets/images/btn-note.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Notes</span></a>
+                                <a href="#" class="btn btn-export inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inine">Xuất</span></a>
+                                <a href="#" class="btn btn-export inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nhập</span></a>
+                                <a href="#" class="btn btn-export inline"><img
+                                        src="../assets/images/btn-export.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nhập KHCS</span></a>
+                                <a href="#" class="btn btn-import inline"><img
+                                        src="../assets/images/btn-import.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Nạp</span></a>
+                                <a href="#" class="btn btn-print inline"><img
+                                        src="../assets/images/btn-print.png"
+                                        alt="" class="inline"><span
+                                        class="inline">In</span></a>
+                                <a href="#" class="btn btn-close inline"><img
+                                        src="../assets/images/btn-close.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Đóng</span></a>
+                                <a href="#" class="btn btn-question
+                                    inline"><img
+                                        src="../assets/images/question.png"
+                                        alt="" class="inline"><span
+                                        class="inline">Hỏi</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="list-button text-right">
+                                <div class="dropdown">
+                                    <button class="btn btn-email btn-secondary
+                                        dropdown-toggle" type="button"
+                                        id="dropdownMenu2"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Gửi Email
+                                    </button>
+                                    <div class="dropdown-menu"
+                                        aria-labelledby="dropdownMenu2">
+                                        <button class="dropdown-item"
+                                            type="button">Gửi qua outlook</button>
+                                        <button class="dropdown-item"
+                                            type="button" data-toggle="modal"
+                                            data-target="#gui-email">Gửi bằng
+                                            mail của
+                                            chương trình</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wrap-height-table">
+                                <table class="table display nowrap table-striped
+                                    row-border
+                                    order-column table-khachhang fixed-2-column"
+                                    id="table-khachhang" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+
+                                            <th>Mã KH</th>
+                                            <th>Tên KH</th>
+                                            <th>Địa chỉ NR</th>
+                                            <th>Điện thoại</th>
+                                            <th>Di động</th>
+                                            <th>Ngày sinh</th>
+                                            <th>Giới tính</th>
+                                            <th>Thẻ KH</th>
+                                            <th>Nhóm KH</th>
+
+                                            <th>Người đại diện</th>
+                                            <th>Địa chỉ cty</th>
+                                            <th>MST</th>
+                                            <th>Fax</th>
+                                            <th>Email</th>
+                                            <th>Website</th>
+                                            <th>Chức vụ</th>
+                                            <th>Ngày tạo KH</th>
+                                            <th>Nhận tin</th>
+                                            <th>Theo dõi</th>
+
+                                            <th>Người QL</th>
+                                            <th>Chi nhánh QL</th>
+                                            <th>Khu vực địa chỉ</th>
+                                            <th>Ghi chú</th>
+                                            <th>Tên viết tắt</th>
+                                            <th>Alias</th>
+                                            <th>Tên công ty</th>
+                                            <th>ĐC giao hóa đơn</th>
+                                            <th>ĐC giao hàng</th>
+                                            <th>ĐC giao hàng 2</th>
+
+                                            <th>PT vận chuyển</th>
+                                            <th>Điều khoản</th>
+                                            <th>Kênh KH</th>
+                                            <th>Tài khoản NH</th>
+                                            <th>Chủ TK</th>
+                                            <th>Mở tại</th>
+                                            <th>Giới hạn nợ</th>
+                                            <th>Giới hạn ngày nợ</th>
+                                            <th>Giới hạn số phiến nợ</th>
+                                            <th>Tính lãi gần nhất</th>
+
+                                            <th>Mức chiết khấu</th>
+                                            <th>Ngày được tạo</th>
+                                            <th>Người tạo</th>
+                                            <th>Ngày được sửa</th>
+                                            <th>Người được sửa</th>
+                                            <th>Người sửa</th>
+                                            <th>Khách hàng tiềm năng</th>
+                                            <th>Thuộc kiểu</th>
+                                            <th>KHTT card</th>
+                                            <th>Ngày mua cuối cùng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>Nguyễn An</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>Nguyễn Xuân Phúc</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>Nguyễn Tấn Dũng</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>Nguyễn Phú Trọng</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0978975731</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+
+                                            <td>HIHAHIA</td>
+                                            <td>HITOMI TANAKA</td>
+                                            <td>Any where</td>
+                                            <td>0123456789</td>
+                                            <td>0123456789</td>
+                                            <td>14/11/1997</td>
+                                            <td>Chuẩn Men</td>
+                                            <td>K biết</td>
+                                            <td>k biết</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                            <td>Test</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lưu</button>
+                <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('../../khachhang/popup/gui-email.html')
+@@include('../../khachhang/popup/them-khach-hang.html')

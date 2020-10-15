@@ -1,0 +1,134 @@
+
+@@include('./modules/head.html')
+@@include('./modules/header.html')
+
+
+<main class="wrapper bg-white">
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="box-border sidebar-search">
+                    <p class="box-border__title">Tiêu chí tìm kiếm</p>
+                    <!--Time-->
+                    <div class="box-border mt-3">
+                        <p>Hạn thanh toán</p>
+                        <div class="box
+                            justify-content-between
+                            d-flex align-items-center">
+                            <input type="text" class="col-6 p-0
+                                choose-date">
+                            <p><b>+</b></p>
+                            <select name="" class="col-4 p-0" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Chi nhánh -->
+                    <div class="box-select mt-4 mb-3">
+                        <p><b>Chi nhánh</b></p>
+                        <select name="" id="" class="w-100
+                            select-gray">
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                            <option value="">Test</option>
+                        </select>
+                    </div>
+
+                    <!-- Khách hàng -->
+                    <div class="box-select mt-3 mb-3">
+                        <p><b>Khách hàng</b></p>
+                        <div class="position-relative">
+                            <select name="" id="" class="col-10 p-0
+                                select-gray">
+                                <option value="">Test</option>
+                                <option value="">Test</option>
+                                <option value="">Test</option>
+                            </select>
+                            <span class="search-icon
+                                color-white
+                                absolute" id="button-danh-sach-nv"
+                                data-toggle="modal"
+                                data-target="#tim-kiem-khach-hang"><i class="fas
+                                    fa-search"></i></span>
+                        </div>
+                    </div>
+                    <!-- List Button -->
+                    <div class="list-button mt-3">
+                        <a href="#" class="btn btn-search d-block"><img
+                                src="../assets/images/btn-search.png"
+                                alt="" class="inline"><span
+                                class="inline">Tìm
+                                kiếm</span></a>
+                        <a href="#" class="btn btn-export mt-1
+                            d-block"><img
+                                src="../assets/images/btn-export.png"
+                                alt="" class="inline"><span
+                                class="inline">Xuất</span></a>
+                        <a href="#" class="btn btn-print mt-1
+                            d-block"><img
+                                src="../assets/images/btn-print.png"
+                                alt="" class="inline"><span
+                                class="inline">In</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 wrap-table-2">
+                <div class="wrap-height-table">
+                    <table class="table display table-striped"
+                        style="width: 100%;" id="table_cn_quahan">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Mã KH</th>
+                                <th>Tên KH</th>
+                                <th>Nhóm KH</th>
+                                <th>Điện thoại</th>
+                                <th>Di động</th>
+                                <th>Đại diện</th>
+                                <th>Ngày lập</th>
+                                <th>Số phiếu</th>
+                                <th>Lý do</th>
+                                <th>Nhân viên</th>
+                                <th>Hạn thanh toán</th>
+                                <th>Tiền tổng</th>
+                                <th>Tổng nợ(VND)</th>
+                                <th>Số trả(VND)</th>
+                                <th>Ngày công nợ</th>
+                                <th>Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+@@include("./khachhang/popup/tim-kiem-khach-hang.html")
+@@include('./modules/footer-script.html')
+@@include('./modules/footer.html')
